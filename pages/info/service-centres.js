@@ -51,7 +51,7 @@ const serviceCentreDetails = [
     email: 'mabirizi@medopticsltd.com',
     active: true,
     insuranceCompanies: ['UAP', 'JUBILEE', 'ICEA', 'APA', 'AON-MINET', 'CASE MEDCARE'],
-    openingHours:"Odur reconstructs his living space, placing a hanging installation of sand cast aluminium shaped like bullets, in the centre of the room. ",
+    openingHours:"Monday – Friday: 08:00 – 17:00, Saturday: 09:00 – 15:00",
     photo: "Med-Optics-Slide1.png",
     linkToExhibition: '',
     followLink:

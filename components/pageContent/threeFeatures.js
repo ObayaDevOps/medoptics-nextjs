@@ -40,17 +40,19 @@ export default function ThreeFeature(){
 
   return (
     <Flex
-      bg="green.100"
+      // bg="green.500"
       _dark={{ bg: "green.500" }}
-      p={{ base: 6, lg: 16, xl: 20 }}
-      w="auto"
+      // p={{ base: 6, lg: 16, xl: 20 }}
+      // w="auto"
+      // maxW={'6xl'}
       justifyContent="center"
       alignItems="center"
     >
       <SimpleGrid
         columns={{ base: 1, md: 2, lg: 3 }}
         spacing={20}
-        px={{ base: 4, lg: 16, xl: 24 }}
+        maxW={'6xl'}
+        px={{ base: 4, lg: 4, xl: 0 }}
         py={20}
         mx="auto"
         bg="white"

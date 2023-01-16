@@ -20,6 +20,17 @@ import ImageSlider from '../../components/utils/carousel/imageSlider'
 import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
 
 import Hero1 from './hero';
+import HeroWithSideImage from './heroWithSideImage';
+
+import TwoColumnFeature from './twoColumnFeature';
+
+import BasicStatistics from './statisticsBar';
+
+import GridListWithDescription from './gridListWithDescription';
+
+import FullWidthBannerWithBackgroundImage from './fullWidthBackgroundBanner';
+
+
 import ThreeFeature from './threeFeatures';
 import CallToAction from './callToAction';
 import CallToActionBanner from './callToActionBanner';
@@ -42,10 +53,20 @@ export default function CallToActionWithAnnotation() {
             <ImageSlider slides={SlideData} />
         </Flex> */}
 		
-      <Hero1 />
+      {/* <Hero1 /> */}
+
+      <HeroWithSideImage />
+
       <ThreeFeature />
-      <TwoPicFeature />
+      <TwoColumnFeature />
+      <BasicStatistics />
+      <GridListWithDescription />
+      <FullWidthBannerWithBackgroundImage />
       <WithSpeechBubbles />
+
+
+
+      {/* <TwoPicFeature /> */}
 
       {/* <CallToAction />
       <CallToActionBanner /> */}
