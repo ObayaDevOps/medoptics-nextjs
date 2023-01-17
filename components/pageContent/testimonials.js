@@ -8,10 +8,23 @@ import {
   Container,
   Avatar,
   useColorModeValue,
+  ScaleFade
 } from '@chakra-ui/react';
 
+import React, { useRef } from "react";
+import { useInView } from "framer-motion";
+  
+
 const Testimonial = ({ children }) => {
-  return <Box>{children}</Box>;
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+
+  return (
+    <ScaleFade initialScale={0.6}
+    in={isInView}>
+    <Box ref={ref}>{children}</Box>
+    </ScaleFade>
+  );
 };
 
 const TestimonialContent = ({ children }) => {

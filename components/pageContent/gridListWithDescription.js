@@ -9,18 +9,28 @@ import {
     GridItem,
     Container,
     useColorModeValue,
-    Text
+    Text,
+    ScaleFade
   } from '@chakra-ui/react';
   import {} from '@chakra-ui/react';
   
   import Image from 'next/image';
   import { getCloudinaryImage, getCloudinaryImageBlur } from '../../components/utils/cloudinaryImageRetreival';
   
+import React, { useRef } from "react";
+import { useInView } from "framer-motion";
+  
   
   const Feature = ({ heading, text }) => {
+    const ref = useRef(null)
+    const isInView = useInView(ref)
     return (
-      <GridItem>
-        <Box>
+      <ScaleFade initialScale={0.6}
+      in={isInView}>
+      <GridItem 
+        ref={ref}
+      >
+        <Box border="3px" borderColor="gray.200">
         <Image
               w="full"
               rounded="lg"
@@ -28,7 +38,7 @@ import {
               src={getCloudinaryImage('anguyo.jpg')} 
               alt="Hellonext feedback boards software screenshot"
               width={500}
-              height={800} 
+              height={600} 
               placeholder="blur"
               blurDataURL={getCloudinaryImageBlur('anguyo.jpg')}
             />
@@ -38,6 +48,7 @@ import {
         <chakra.p>{text}</chakra.p>
         </Box>
       </GridItem>
+      </ScaleFade>
     );
   };
   
@@ -64,7 +75,14 @@ import {
               rounded={'md'}>
               What We Offer
             </Text>
-              <chakra.h2 fontSize="5xl" fontWeight="700">
+              <chakra.h2 
+              fontSize="6xl" 
+              fontWeight="700"
+              bgClip="text"
+              bgGradient='linear(to-r, green.600, green.300)'
+              fontWeight="extrabold"
+              
+              >
                 Our Service Scope
               </chakra.h2>
             </VStack>

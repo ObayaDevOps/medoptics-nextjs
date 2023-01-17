@@ -8,40 +8,48 @@ import {
     StackDivider,
     Icon,
     useColorModeValue,
+    ScaleFade
   } from '@chakra-ui/react';
   import {
     IoAnalyticsSharp,
     IoLogoBitcoin,
     IoSearchSharp,
   } from 'react-icons/io5';
-  import { ReactElement } from 'react';
-  import Head from 'next/head';
+  import React, { useRef } from "react";
+  import { useInView } from "framer-motion";
+    import Head from 'next/head';
   import Image from 'next/image';
   import { getCloudinaryImage, getCloudinaryImageBlur } from '../../components/utils/cloudinaryImageRetreival';
   
   
   
   const Feature = ({ text, icon, iconBg }) => {
+    const ref = useRef(null)
+    const isInView = useInView(ref)
     return (
-      <Stack direction={'row'} align={'center'}>
-        <Flex
-          w={8}
-          h={8}
-          align={'center'}
-          justify={'center'}
-          rounded={'full'}
-          bg={iconBg}>
-          {icon}
-        </Flex>
-        <Text fontWeight={600}>{text}</Text>
-      </Stack>
+      <ScaleFade initialScale={0.6}
+      in={isInView}>
+        <Stack direction={'row'} align={'center'}>
+          <Flex
+            w={8}
+            h={8}
+            align={'center'}
+            justify={'center'}
+            rounded={'full'}
+            bg={iconBg}
+            ref={ref}>
+            {icon}
+          </Flex>
+          <Text fontWeight={600}>{text}</Text>
+        </Stack>
+      </ScaleFade>
     );
   };
   
   export default function TwoColumnFeature() {
     return (
       
-      <Container maxW={'6xl'} py={12} paddingTop={20}>
+      <Container  maxW={'6xl'} py={120} paddingTop={70} minHeight={"75vh"} centerContent >
        
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
           <Stack spacing={4}>
@@ -58,6 +66,10 @@ import {
             </Text>
             <Heading
             fontSize={'5xl'}
+            bgClip="text"
+            bgGradient='linear(to-r, green.600, green.300)'
+            fontWeight="extrabold"
+
             >
                 A Modern Eye-Care Specialist</Heading>
 
@@ -67,11 +79,7 @@ import {
             </Text>
             <Stack
               spacing={4}
-              divider={
-                <StackDivider
-                  borderColor={useColorModeValue('gray.100', 'gray.700')}
-                />
-              }>
+>
               <Feature
                 icon={
                   <Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />

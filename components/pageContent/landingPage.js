@@ -12,22 +12,21 @@ import {
   Flex,
   SimpleGrid,
   Center,
+  
 } from '@chakra-ui/react';
+import React, { useRef } from "react";
+
 
 import { SlideData } from "../../components/utils/carousel/medoptics-landing-slides"
 import ImageSlider from '../../components/utils/carousel/imageSlider'
 
 import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
 
-import Hero1 from './hero';
+import Hero1 from './heroWithImageSlider';
 import HeroWithSideImage from './heroWithSideImage';
-
 import TwoColumnFeature from './twoColumnFeature';
-
 import BasicStatistics from './statisticsBar';
-
 import GridListWithDescription from './gridListWithDescription';
-
 import FullWidthBannerWithBackgroundImage from './fullWidthBackgroundBanner';
 
 
@@ -37,6 +36,11 @@ import CallToActionBanner from './callToActionBanner';
 import TwoPicFeature from './twoPicFeature';
 import WithSpeechBubbles from './testimonials';
 import { EyeTestCalendar } from '../../pages/appointments/eyeTest';
+
+import { useInView } from "framer-motion";
+
+
+
 
 export default function CallToActionWithAnnotation() {
   return (
@@ -57,7 +61,9 @@ export default function CallToActionWithAnnotation() {
 
       <HeroWithSideImage />
 
-      <ThreeFeature />
+        <ThreeFeature />
+
+
       <TwoColumnFeature />
       <BasicStatistics />
       <GridListWithDescription />

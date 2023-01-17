@@ -6,12 +6,13 @@ export default function HeroWithSideImage(){
 
   const bg = useColorModeValue("white", "gray.800");
   return (
-    <Box pos="relative" overflow="hidden" bg={bg} mt={10}>
+    <Box pos="relative" overflow="hidden" bg={bg} mt={0}>
       <Box maxW="7xl" mx="auto">
         <Box
           pos="relative"
           pb={{ base: 8, sm: 16, md: 20, lg: 28, xl: 32 }}
-          maxW={{ lg: "2xl" }}
+          maxW={{ lg: "5xl" }}
+          minH={{lg: "85vh"}}
           w={{ lg: "full" }}
           zIndex={1}
           bg={bg}
@@ -74,7 +75,7 @@ export default function HeroWithSideImage(){
                         }}
                         w="full"
                         bgClip="text"
-                        bgGradient='linear(to-r, green.500, green.400)'
+                        bgGradient='linear(to-r, green.600, green.300)'
                         fontWeight="extrabold"
                         >
                         Eye Health needs
@@ -115,6 +116,7 @@ export default function HeroWithSideImage(){
                 sm: "left",
                 md: "center",
                 }}
+                paddingTop={10}
             >
                 <Button
                 as="a"
@@ -198,7 +200,7 @@ export default function HeroWithSideImage(){
           fit="cover"
           src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
           alt=""
-          loading="lazy"
+          loading="eager"
         />
       </Box>
     </Box>
