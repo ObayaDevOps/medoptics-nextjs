@@ -97,11 +97,11 @@ import {
               aria-label={'Toggle Navigation'}
             />
           </Flex>
-          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'space-evenly' }}>
           <NextLink href='/#' passHref>
             <Link>
             <Show above='md'>
-              <NextImage src={colorMode === 'light' ? MedOptics20Years:  MedOptics20Years} width={(250)} height={(90)}/>
+              <NextImage src={colorMode === 'light' ? MedOptics20Years:  MedOptics20Years} width={(300)} height={(90)}/>
             </Show>
             <Show below='md'>
               <NextImage src={colorMode === 'light' ? MedOpticsBoxLogo:  MedOpticsBoxLogo} width={(50)} height={(50)}/>
@@ -140,7 +140,7 @@ import {
 
   
     return (
-      <Stack direction={'row'} spacing={8} paddingTop={5}>
+      <Stack direction={'row'}   spacing={8} paddingTop={5}>
         {NAV_ITEMS.map((navItem) => (
           <Box key={navItem.label}>
             <Popover trigger={'hover'} placement={'bottom-start'}>
@@ -150,7 +150,7 @@ import {
                   p={2}
                   rounded={'md'}
 
-                  fontSize={'sm'}
+                  fontSize={'md'}
                   href={navItem.href ?? '#'}
                   fontWeight={700}
                   color={linkColor}

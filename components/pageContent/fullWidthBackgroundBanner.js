@@ -43,10 +43,10 @@ Elit imperdiet congue urna senectus tortor finibus hac placerat neque habitant m
 
             <Stack direction={'row'}>
               <Button
-                bg={'blue.400'}
+                bg={'green.400'}
                 rounded={'full'}
                 color={'white'}
-                _hover={{ bg: 'blue.500' }}>
+                _hover={{ bg: 'green.500' }}>
                 Show me more
               </Button>
               <Button

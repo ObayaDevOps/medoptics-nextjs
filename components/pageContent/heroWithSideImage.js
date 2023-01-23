@@ -77,6 +77,7 @@ export default function HeroWithSideImage(){
                         bgClip="text"
                         bgGradient='linear(to-r, green.600, green.300)'
                         fontWeight="extrabold"
+                        transition="all .65s ease" _hover={{ transform: 'scale(1.005)', filter: "brightness(140%)", }}
                         >
                         Eye Health needs
                         </Text>{" "}
@@ -90,9 +91,10 @@ export default function HeroWithSideImage(){
                 mx={{ sm: "auto", lg: 0 }}
                 color="gray.500"
               >
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat aliqua.
+                Our focus at Med Optics is to develop and lead the Ugandan 
+                ophthalmic and Optometry industry with novel solutions that
+                 advance the existing standard of eye care, and enrich the lives
+                  and treatment alternatives for patients across the country, and beyond.
               </chakra.p>
               <Box
                 mt={{ base: 5, sm: 8 }}
@@ -116,8 +118,9 @@ export default function HeroWithSideImage(){
                 sm: "left",
                 md: "center",
                 }}
-                paddingTop={10}
+                paddingTop={5}
             >
+              <NextLink href="/info/service-centres">
                 <Button
                 as="a"
                 variant="solid"
@@ -127,6 +130,7 @@ export default function HeroWithSideImage(){
                 display="inline-flex"
                 alignItems="center"
                 justifyContent="center"
+                fontFamily="Helvetica"
                 w={{
                     base: "full",
                     sm: "auto",
@@ -147,34 +151,38 @@ export default function HeroWithSideImage(){
                     />
                 </Icon>
                 </Button>
+              </NextLink>
+
                 <NextLink href="/appointments/eyeTest">
-                <Button
-                as="a"
-                colorScheme="green"
-                bgGradient='linear(to-r, green.500, green.300)'
-                display="inline-flex"
-                alignItems="center"
-                justifyContent="center"
-                w={{
-                    base: "full",
-                    sm: "auto",
-                }}
-                mb={{
-                    base: 2,
-                    sm: 0,
-                }}
-                size="lg"
-                cursor="pointer"
-                >
-                Book an Appointment
-                <Icon boxSize={4} ml={1} viewBox="0 0 20 20" fill="currentColor">
-                    <path
-                    fillRule="evenodd"
-                    d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z"
-                    clipRule="evenodd"
-                    />
-                </Icon>
-                </Button>
+                  <Button
+                  as="a"
+                  colorScheme="green"
+                  bgGradient='linear(to-r, green.500, green.300)'
+                  display="inline-flex"
+                  alignItems="center"
+                  justifyContent="center"
+                  w={{
+                      base: "full",
+                      sm: "auto",
+                  }}
+                  mb={{
+                      base: 2,
+                      sm: 0,
+                  }}
+                  size="lg"
+                  cursor="pointer"
+                  fontFamily="Helvetica"
+
+                  >
+                  Book an Appointment
+                  <Icon boxSize={4} ml={1} viewBox="0 0 20 20" fill="currentColor">
+                      <path
+                      fillRule="evenodd"
+                      d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z"
+                      clipRule="evenodd"
+                      />
+                  </Icon>
+                  </Button>
                 </NextLink>
             </Stack>
     

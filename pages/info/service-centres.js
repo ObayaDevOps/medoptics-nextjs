@@ -56,58 +56,6 @@ const serviceCentreDetails = [
     linkToExhibition: '',
     followLink:
         'https://www.instagram.com/afropocene/',
-  },
-  {
-    serviceCentreName: 'Muwawa',
-    address: 'Odur',
-    telephone: '2021-04-06',
-    email: '2021-04-06',
-    active: true,
-    insuranceCompanies: ['Installation', 'Sculpture', 'Aluminium'],
-    openingHours:"Odur reconstructs his living space, placing a hanging installation of sand cast aluminium shaped like bullets, in the centre of the room. ",
-    photo: "Med-Optics-Slide1.png",
-    linkToExhibition: '',
-    followLink:
-        'https://www.instagram.com/afropocene/',
-  },
-  {
-    serviceCentreName: 'Muwawa',
-    address: 'Odur',
-    telephone: '2021-04-06',
-    email: '2021-04-06',
-    active: true,
-    insuranceCompanies: ['Installation', 'Sculpture', 'Aluminium'],
-    openingHours:"Odur reconstructs his living space, placing a hanging installation of sand cast aluminium shaped like bullets, in the centre of the room. ",
-    photo: "Med-Optics-Slide1.png",
-    linkToExhibition: '',
-    followLink:
-        'https://www.instagram.com/afropocene/',
-  },
-  {
-    serviceCentreName: 'Muwawa',
-    address: 'Odur',
-    telephone: '2021-04-06',
-    email: '2021-04-06',
-    active: true,
-    insuranceCompanies: ['Installation', 'Sculpture', 'Aluminium'],
-    openingHours:"Odur reconstructs his living space, placing a hanging installation of sand cast aluminium shaped like bullets, in the centre of the room. ",
-    photo: "Med-Optics-Slide1.png",
-    linkToExhibition: '',
-    followLink:
-        'https://www.instagram.com/afropocene/',
-  },
-  {
-    serviceCentreName: 'Muwawa',
-    address: 'Odur',
-    telephone: '2021-04-06',
-    email: '2021-04-06',
-    active: true,
-    insuranceCompanies: ['Installation', 'Sculpture', 'Aluminium'],
-    openingHours:"Odur reconstructs his living space, placing a hanging installation of sand cast aluminium shaped like bullets, in the centre of the room. ",
-    photo: "Med-Optics-Slide1.png",
-    linkToExhibition: '',
-    followLink:
-        'https://www.instagram.com/afropocene/',
   }
 ];
 

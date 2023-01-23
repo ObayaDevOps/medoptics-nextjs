@@ -54,7 +54,7 @@ import { useInView } from "framer-motion";
   
   export default function GridListWithDescription() {
     return (
-      <Box as={Container} maxW="6xl" mt={14} p={4} paddingTop={20} minHeight={'80vh'}>
+      <Box as={Container} maxW="6xl" mt={14} p={4} minHeight={'90vh'}>
         <Grid
           templateColumns={{
             base: 'repeat(1, 1fr)',
