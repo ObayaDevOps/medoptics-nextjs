@@ -15,6 +15,7 @@ import {
     useBreakpointValue,
     useColorMode,
     useDisclosure,
+    Show
   } from '@chakra-ui/react';
 
   import {
@@ -22,6 +23,8 @@ import {
     CloseIcon,
     ChevronDownIcon,
     ChevronRightIcon,
+    MoonIcon,
+    SunIcon
   } from '@chakra-ui/icons';
 
   import theme from '../utils/theme'
@@ -30,6 +33,7 @@ import {
   import africaIcon from '../../public/images/icon/africa.png'
   import africaIconWhite from '../../public/images/icon/africa-white-icon.png'
   import MedOpticsBoxLogo from '../../public/images/icon/medoptics-logo-mini-square.jpeg'
+  import MedOptics20Years from '../../public/images/icon/Med-Optics.svg'
 
   
 
@@ -44,10 +48,18 @@ import {
     return (
       <header>
       <Script src="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
-        <Button onClick={toggleColorMode} size='xs' fontFamily={'Arial'} py={-1}  rounded={'md'} colorScheme={'green'}
- >
-          {colorMode === 'light' ? 'Dark' : 'Light'} Mode
-        </Button>
+        {/* <Button onClick={toggleColorMode} size='xs' fontFamily={'Arial'} py={-1}  rounded={'md'} colorScheme={'green'}
+ > */}
+          {/* {colorMode === 'light' ? 'Dark' : 'Light'} Mode */}
+          <IconButton
+              onClick={toggleColorMode}
+              icon={
+                colorMode == 'light' ? <MoonIcon color={'green.400'} w={3} h={3} /> : <SunIcon color={'green.100'} w={5} h={5} />
+              }
+              // variant={'ghost'}
+              aria-label={'Toggle Navigation'}
+            />
+        {/* </Button> */}
       </header>
     )
   }
@@ -85,10 +97,17 @@ import {
               aria-label={'Toggle Navigation'}
             />
           </Flex>
-          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'space-evenly' }}>
           <NextLink href='/#' passHref>
             <Link>
-                <NextImage src={colorMode === 'light' ? MedOpticsBoxLogo:  MedOpticsBoxLogo} width={(40)} height={(40)}/>
+            <Show above='md'>
+              <NextImage src={colorMode === 'light' ? MedOptics20Years:  MedOptics20Years} width={(300)} height={(90)}/>
+            </Show>
+            <Show below='md'>
+              <NextImage src={colorMode === 'light' ? MedOpticsBoxLogo:  MedOpticsBoxLogo} width={(50)} height={(50)}/>
+            </Show>
+
+                
             </Link>
           </NextLink>
 
@@ -99,7 +118,7 @@ import {
   
           <Stack
             flex={{ base: 1, md: 0 }}
-            justify={'flex-end'}
+            justify={'center'}
             direction={'row'}
             spacing={6}>
             <DarkToggleButton />
@@ -121,7 +140,7 @@ import {
 
   
     return (
-      <Stack direction={'row'} spacing={4} paddingTop={1.5}>
+      <Stack direction={'row'}   spacing={8} paddingTop={5}>
         {NAV_ITEMS.map((navItem) => (
           <Box key={navItem.label}>
             <Popover trigger={'hover'} placement={'bottom-start'}>
@@ -131,9 +150,9 @@ import {
                   p={2}
                   rounded={'md'}
 
-                  fontSize={'sm'}
+                  fontSize={'md'}
                   href={navItem.href ?? '#'}
-                  fontWeight={500}
+                  fontWeight={700}
                   color={linkColor}
                   _hover={{ bg: colorMode === 'light' ? 'green.50': 'green.700', textColor: 'green.400'}}
                   fontFamily={'Helvetica'}
@@ -166,6 +185,7 @@ import {
     );
   };
   
+
   const DesktopSubNav = ({ label, href, subLabel }) => {
     return (
       <NextLink href={href} passHref>
@@ -183,7 +203,7 @@ import {
               rounded={'md'}
 
               _groupHover={{ color: 'green.400' }}
-              fontWeight={500}
+              fontWeight={700}
               fontFamily={'Helvetica'}
               _hover={{ color: 'green.400' }}
               >
@@ -193,7 +213,6 @@ import {
             <Text fontSize={'sm'}>{subLabel}</Text>
           </Box>
           <Flex
-            transition={'all .3s ease'}
             transform={'translateX(-10px)'}
             opacity={0}
             rounded={'md'}
@@ -307,13 +326,13 @@ import {
       ],
     },
     {
-      label: 'Products & Services',
+      label: 'Services',
       children: [
-        {
-          label: 'Products',
-          subLabel: 'Frames, Lenses, Contact Lens and more ...',
-          href: '/products-and-services/products',
-        },
+        // {
+        //   label: 'Products',
+        //   subLabel: 'Frames, Lenses, Contact Lens and more ...',
+        //   href: '/products-and-services/products',
+        // },
         {
           label: 'Services',
           subLabel: 'Book Appointments, Consultations ...',

@@ -1,5 +1,6 @@
-import React from "react";
-import { chakra, Box, SimpleGrid, Flex, Icon } from "@chakra-ui/react";
+import { chakra, Box, SimpleGrid, Flex, Icon, ScaleFade, } from "@chakra-ui/react";
+import React, { useRef } from "react";
+import { useInView } from "framer-motion";
 
 const Feature = (props) => {
   return (
@@ -37,25 +38,33 @@ const Feature = (props) => {
 
 
 export default function ThreeFeature(){
+  const ref = useRef(null)
+  const isInView = useInView(ref)
 
   return (
+    <ScaleFade initialScale={0.6}
+    in={isInView}>
     <Flex
-      bg="green.100"
-      _dark={{ bg: "green.500" }}
-      p={{ base: 6, lg: 16, xl: 20 }}
-      w="auto"
+      // bg="green.500"
+      // _dark={{ bg: "green.500" }}
+      p={{ base: 6, lg: 10 }}
+      // w="auto"
+      // maxW={'6xl'}
       justifyContent="center"
       alignItems="center"
+      ref={ref}
+
     >
       <SimpleGrid
         columns={{ base: 1, md: 2, lg: 3 }}
         spacing={20}
-        px={{ base: 4, lg: 16, xl: 24 }}
+        maxW={'6xl'}
+        px={{ base: 4, lg: 4, xl: 0 }}
         py={20}
         mx="auto"
-        bg="white"
+        // bg="white"
         // bgGradient='linear(to-r, gray.50, green.300)'
-        _dark={{ bgGradient: 'linear(to-r, green.500, green.800)' }}
+        // _dark={{ bgGradient: 'linear(to-r, green.500, green.800)' }}
         shadow="sm"
       >
         <Feature
@@ -105,5 +114,6 @@ export default function ThreeFeature(){
         </Feature>
       </SimpleGrid>
     </Flex>
+    </ScaleFade>
   );
 };

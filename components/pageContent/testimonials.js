@@ -8,10 +8,23 @@ import {
   Container,
   Avatar,
   useColorModeValue,
+  ScaleFade
 } from '@chakra-ui/react';
 
+import React, { useRef } from "react";
+import { useInView } from "framer-motion";
+  
+
 const Testimonial = ({ children }) => {
-  return <Box>{children}</Box>;
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+
+  return (
+    <ScaleFade initialScale={0.6}
+    in={isInView}>
+    <Box ref={ref}>{children}</Box>
+    </ScaleFade>
+  );
 };
 
 const TestimonialContent = ({ children }) => {
@@ -84,7 +97,7 @@ const TestimonialAvatar = ({
 export default function WithSpeechBubbles() {
   return (
     <Box bg={useColorModeValue('green.100', 'green.700')}>
-      <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
+      <Container maxW={'6xl'} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={'center'}>
           <Heading>Our Clients Speak</Heading>
           <Text>We have been working with clients around the world</Text>
