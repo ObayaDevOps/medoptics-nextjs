@@ -69,6 +69,7 @@ export default function CallToActionWithAnnotation() {
       <GridListWithDescription />
       <FullWidthBannerWithBackgroundImage />
       <WithSpeechBubbles />
+      <CallToActionBanner />
 
 
 

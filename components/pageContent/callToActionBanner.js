@@ -1,17 +1,21 @@
 import React from "react";
-import { chakra, Box, Flex, Stack, Link } from "@chakra-ui/react";
+import { chakra, Box, Flex, Stack, Button, Icon } from "@chakra-ui/react";
+import NextLink from 'next/link';
+
 
 export default function CallToActionBanner(){
   return (
     <Flex
-      bg="#edf3f8"
-      _dark={{ bg: "#3e3e3e" }}
+      // bg="#edf3f8"
+      // _dark={{ bg: "#3e3e3e" }}
       p={50}
       w="full"
       alignItems="center"
       justifyContent="center"
     >
-      <Box bg="gray.50" _dark={{ bg: "gray.800" }}>
+      {/* <Box bg="gray.50" _dark={{ bg: "gray.800" }}> */}
+      <Box>
+
         <Box
           maxW="7xl"
           w={{ md: "3xl", lg: "6xl" }}
@@ -36,7 +40,7 @@ export default function CallToActionBanner(){
               color="brand.600"
               _dark={{ color: "gray.500" }}
             >
-              Start your free trial today.
+              Get your eyes checked today!
             </chakra.span>
           </chakra.h2>
           <Stack
@@ -44,46 +48,71 @@ export default function CallToActionBanner(){
             mt={{ base: 8, lg: 0 }}
             flexShrink={{ lg: 0 }}
           >
-            <Link
-              w={["full", , "auto"]}
-              display="inline-flex"
-              alignItems="center"
-              justifyContent="center"
-              px={5}
-              py={3}
-              border="solid transparent"
-              fontWeight="bold"
-              rounded="md"
-              shadow="md"
-              _light={{ color: "white" }}
-              bg="brand.600"
-              _dark={{ bg: "brand.500" }}
-              _hover={{
-                bg: "brand.700",
-                _dark: { bg: "brand.600" },
-              }}
-            >
-              Get started
-            </Link>
-            <Link
-              w={["full", , "auto"]}
-              display="inline-flex"
-              alignItems="center"
-              justifyContent="center"
-              px={5}
-              py={3}
-              border="solid transparent"
-              fontWeight="bold"
-              rounded="md"
-              shadow="md"
-              color="brand.600"
-              bg="white"
-              _hover={{
-                bg: "brand.50",
-              }}
-            >
-              Learn More
-            </Link>
+            <NextLink href="/info/service-centres">
+                <Button
+                as="a"
+                variant="solid"
+                colorScheme="green"
+                bgGradient='linear(to-r, green.500, green.300)'
+
+                display="inline-flex"
+                alignItems="center"
+                justifyContent="center"
+                fontFamily="Helvetica"
+                w={{
+                    base: "full",
+                    sm: "auto",
+                }}
+                mb={{
+                    base: 2,
+                    sm: 0,
+                }}
+                size="lg"
+                cursor="pointer"
+                >
+                Find a Centre
+                <Icon boxSize={4} ml={1} viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                    />
+                </Icon>
+                </Button>
+              </NextLink>
+            
+
+              <NextLink href="/appointments/eyeTest">
+                  <Button
+                  as="a"
+                  colorScheme="green"
+                  bgGradient='linear(to-r, green.500, green.300)'
+                  display="inline-flex"
+                  alignItems="center"
+                  justifyContent="center"
+                  w={{
+                      base: "full",
+                      sm: "auto",
+                  }}
+                  mb={{
+                      base: 2,
+                      sm: 0,
+                  }}
+                  size="lg"
+                  cursor="pointer"
+                  fontFamily="Helvetica"
+
+                  >
+                  Book an Appointment
+                  <Icon boxSize={4} ml={1} viewBox="0 0 20 20" fill="currentColor">
+                      <path
+                      fillRule="evenodd"
+                      d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z"
+                      clipRule="evenodd"
+                      />
+                  </Icon>
+                  </Button>
+                </NextLink>
           </Stack>
         </Box>
       </Box>

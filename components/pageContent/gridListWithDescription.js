@@ -21,7 +21,7 @@ import React, { useRef } from "react";
 import { useInView } from "framer-motion";
   
   
-  const Feature = ({ heading, text }) => {
+  const Feature = ({ heading, text1, text2 }) => {
     const ref = useRef(null)
     const isInView = useInView(ref)
     return (
@@ -45,7 +45,9 @@ import { useInView } from "framer-motion";
         <chakra.h3 fontSize="xl" fontWeight="600">
           {heading}
         </chakra.h3>
-        <chakra.p>{text}</chakra.p>
+        <chakra.p>{text1}</chakra.p>
+        <chakra.p>{text2}</chakra.p>
+
         </Box>
       </GridItem>
       </ScaleFade>
@@ -54,7 +56,7 @@ import { useInView } from "framer-motion";
   
   export default function GridListWithDescription() {
     return (
-      <Box as={Container} maxW="6xl" mt={14} p={4} minHeight={'90vh'}>
+      <Box as={Container} maxW="6xl" mt={14} p={4} minHeight={'100vh'}>
         <Grid
           templateColumns={{
             base: 'repeat(1, 1fr)',
@@ -87,39 +89,30 @@ import { useInView } from "framer-motion";
               </chakra.h2>
             </VStack>
           </GridItem>
-          <GridItem>
-            <Flex>
-              <chakra.p>
-              Potenti vivamus ac mi nam inceptos lacus at sociosqu sapien.
-               Dictumst sit at quam aliquet consequat eros viverra cubilia gravida fringilla interdum.
-                Dis mauris metus
-              </chakra.p>
-            </Flex>
-          </GridItem>
         </Grid>
-        <Divider mt={12} mb={12} />
         <Grid
           templateColumns={{
             base: 'repeat(1, 1fr)',
-            sm: 'repeat(2, 1fr)',
-            md: 'repeat(4, 1fr)',
+            sm: 'repeat(3, 1fr)',
+            md: 'repeat(3, 1fr)',
           }}
           gap={{ base: '8', sm: '12', md: '16' }}>
           <Feature
-            heading={'Comprehensive Eye Exams'}
-            text={'Eros consectetuer suspendisse feugiat egestas luctus aliquam dolor ridiculus phasellus magna.'}
+            heading={'Computerized Eye Examination'}
+            text1={'Experience clear vision with our comprehensive eye exams and personalized eyewear solutions. '}
+            text2={'Our state-of-the-art equipment, combined with the expertise of our highly trained eye care professionals ensures accurate diagnoses and effective treatments, and allows us to provide the highest level of care to our patients'}
+
           />
           <Feature
-            heading={'Complete Optical Services'}
-            text={'Eros consectetuer suspendisse feugiat egestas luctus aliquam dolor ridiculus phasellus magna.'}
+            heading={'Made-to-Measure Lenses'}
+            text1={'For a full vision performance, an excellent lens alone is not enough. It cannot be perfect if it has not been fitted to each individual wearer. '}
+            text2={'Visit Med Optic’s Optical shops across the country and enjoy service tailored to your needs - from precise eye measurement to perfect lens fitting.'}
+
           />
           <Feature
-            heading={'Contact Lens Examination'}
-            text={'Eros consectetuer suspendisse feugiat egestas luctus aliquam dolor ridiculus phasellus magna.'}
-          />
-          <Feature
-            heading={'Urgent Vision Care'}
-            text={'Eros consectetuer suspendisse feugiat egestas luctus aliquam dolor ridiculus phasellus magna.'}
+            heading={'Lifelong Aftercare'}
+            text1={'All completed repairs and adjustments undergo rigorous quality control checks and the parts and labour is free for all glass frames.'}
+            text2={'The After Sales team supports our clients that have purchased products (eye glasses, contact lenses) made or marketed by Med Optics, from managing returns to warranty policies for eyewear collections, and corrective lenses.'}
           />
         </Grid>
       </Box>

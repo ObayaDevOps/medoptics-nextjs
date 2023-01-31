@@ -12,11 +12,12 @@ import {
     useColorModeValue,
   } from '@chakra-ui/react';
   import { ReactNode } from 'react';
-  import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+  import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
   import { BiMailSend } from 'react-icons/bi';
   import NextLink from 'next/link'
 
   import MedOptics20Years from '../../public/images/icon/Med-Optics.svg'
+  import Top100Companies from '../../public/images/icon/Top100Logo.png'
   import Image from 'next/image'
 
   
@@ -90,29 +91,38 @@ import {
               <Box>
               <NextLink href='/#'>
                 <Image src={useColorModeValue( MedOptics20Years,MedOptics20Years)} width={595} height={134}/>
-                </NextLink>              </Box>
+                </NextLink>
+                <NextLink href='/#'>
+                <Image src={useColorModeValue( Top100Companies,Top100Companies)} width={395} height={154}/>
+                </NextLink>                  </Box>
               <Text fontSize={'sm'}>
-                © 2022 Med-Optics Ltd. All rights reserved
+                © 2023 Med-Optics Ltd. All rights reserved
               </Text>
               <Stack direction={'row'} spacing={6}>
-                <SocialButton label={'Twitter'} href={'#'}>
+                <SocialButton label={'Twitter'} href={'https://twitter.com/OpticsMed'}>
                   <FaTwitter />
                 </SocialButton>
-                <SocialButton label={'YouTube'} href={'#'}>
+                <SocialButton label={'YouTube'} href={'https://www.youtube.com/channel/UC761oMRZVp4Ld2FB5gfDKjA/featured'}>
                   <FaYoutube />
                 </SocialButton>
-                <SocialButton label={'Instagram'} href={'#'}>
+                <SocialButton label={'Instagram'} href={'https://www.instagram.com/medopticsltd/'}>
                   <FaInstagram />
+                </SocialButton>
+                <SocialButton label={'Facebook'} href={'https://www.facebook.com/MedOpticsLtd/'}>
+                  <FaFacebook />
+                </SocialButton>
+                <SocialButton label={'LinkedIn'} href={'https://www.linkedin.com/company/med-optics-vision-centre/'}>
+                  <FaLinkedin />
                 </SocialButton>
               </Stack>
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Company</ListHeader>
-              <Link href={'#'}>About us</Link>
+              <Link href={'/about/about-us'}>About us</Link>
               <Link href={'#'}>Blog</Link>
-              <Link href={'#'}>Contact us</Link>
-              <Link href={'#'}>Pricing</Link>
-              <Link href={'#'}>Testimonials</Link>
+              <Link href={'/info/contact-enquiry'}>Contact us</Link>
+              <Link href={'/products-and-services/services'}>Services</Link>
+              <Link href={'/appointments/eyeTest'}>Book Appointment</Link>
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Support</ListHeader>
@@ -143,6 +153,24 @@ import {
                   icon={<BiMailSend />}
                 />
               </Stack>
+              <Text fontSize={'sm'} fontWeight={"bold"}>   
+                Address
+              </Text>
+
+              <Text fontSize={'sm'}>   
+                  UMA Show Grounds, Plot 63 Jinja Road, Kampala
+              </Text>
+
+              <Text fontSize={'sm'} fontWeight={"bold"}>   
+                Hours
+              </Text>
+
+              <Text fontSize={'sm'}>      
+                Monday—Friday: 8:00AM–5:00PM
+              </Text>
+              <Text fontSize={'sm'}>      
+                Saturday: 9:00AM–5:00PM
+              </Text>
             </Stack>
           </SimpleGrid>
         </Container>

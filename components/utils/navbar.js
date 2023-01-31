@@ -387,24 +387,24 @@ import {
     },
     {
       label: 'Blog',
-      // href: '/exhibitions/exhibitions-home',
-      children: [
-        // {
-        //   label: 'Upcoming/Current',
-        //   subLabel: '',
-        //   href: '/exhibitions/current-exhibition',
-        // },
-        {
-          label: 'Exhibition Archive',
-          subLabel: '',
-          href: '/exhibitions/exhibitions-archive',
-        },
-        // {
-        //   label: 'Museum Of Selves',
-        //   subLabel: 'Collaborative Exhibition and Youth Workshop',
-        //   href: '/exhibitions/museum-of-selves-exhibition',
-        // }
-      ],
+      href: 'https://medoptics-blog-sanity-cms-next-js.vercel.app/',
+      // children: [
+      //   // {
+      //   //   label: 'Upcoming/Current',
+      //   //   subLabel: '',
+      //   //   href: '/exhibitions/current-exhibition',
+      //   // },
+      //   // {
+      //   //   label: 'Exhibition Archive',
+      //   //   subLabel: '',
+      //   //   href: '/exhibitions/exhibitions-archive',
+      //   // },
+      //   // {
+      //   //   label: 'Museum Of Selves',
+      //   //   subLabel: 'Collaborative Exhibition and Youth Workshop',
+      //   //   href: '/exhibitions/museum-of-selves-exhibition',
+      //   // }
+      // ],
     },
 
     {

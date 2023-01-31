@@ -53,7 +53,6 @@ export default function ThreeFeature(){
       justifyContent="center"
       alignItems="center"
       ref={ref}
-
     >
       <SimpleGrid
         columns={{ base: 1, md: 2, lg: 3 }}
@@ -68,7 +67,7 @@ export default function ThreeFeature(){
         shadow="sm"
       >
         <Feature
-          title="Computerized Eye Examination"
+          title="Need Immediate Eye Care?"
           icon={
             <path
               strokeLinecap="round"
@@ -78,12 +77,13 @@ export default function ThreeFeature(){
             />
           }
         >
-          See an Optometrist or Ophthalmologist according to your needs.
-           A number of tests are available in order to detect the cause of your discomfort or vision impairment.
+          Our experts, including top-ranked ophthalmologists, 
+          optometrists, and opticians, are available at our nine 
+          convenient locations across Uganda.
         </Feature>
 
         <Feature
-          title="Made-to-measure lenses"
+          title="Make an Appointment"
           icon={
             <path
               fillRule="evenodd"
@@ -92,13 +92,13 @@ export default function ThreeFeature(){
             />
           }
         >
-        We manufacture lenses in house and are the exclusive Uganda providers of BBGR lenses, 
-        which is a French brand with over 170 years of lens crafting expertise.
+        We have in-person and virtual visits available. 
+        Call us at +256 414 340 099.
 
         </Feature>
 
         <Feature
-          title="Life long Aftercare"
+          title="Plan your Visit"
           icon={
             <path
               strokeLinecap="round"
@@ -108,9 +108,8 @@ export default function ThreeFeature(){
             />
           }
         >
-          We believe that care extends long after you leave the service centre.
-          To ensure the utmost patient satisfaction, adjustments and repairs are free for all our frames!
-
+          Don't let vision problems hold you back
+           - visit us for expert eye care and optical treatment.
         </Feature>
       </SimpleGrid>
     </Flex>

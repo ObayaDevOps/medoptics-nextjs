@@ -22,7 +22,8 @@ import { useInView } from "framer-motion";
     const ref = useRef(null)
     const isInView = useInView(ref)
     return (
-
+      <ScaleFade initialScale={0.6}
+      in={isInView}>
       <Stat
         px={{ base: 2, md: 4 }}
         py={'5'}
@@ -49,6 +50,7 @@ import { useInView } from "framer-motion";
           </Box>
         </Flex>
       </Stat>
+      </ScaleFade>
     );
   }
   
@@ -57,20 +59,25 @@ import { useInView } from "framer-motion";
     const isInView = useInView(ref)
     return (
       <Box maxW="6xl" mx={'auto'} pt={10} px={{ base: 2, sm: 12, md: 17 }}>
-        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
+        <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ base: 5, lg: 8 }}>
           <StatsCard
-            title={'Patients'}
-            stat={'5,000'}
+            title={'Service Centres'}
+            stat={'9'}
             icon={<BsPerson size={'3em'} />}
           />
           <StatsCard
-            title={'Appointments'}
-            stat={'1,000'}
+            title={'Years of Service Excellence'}
+            stat={'20'}
             icon={<FiServer size={'3em'} />}
           />
           <StatsCard
-            title={'Service Centres'}
-            stat={'7'}
+            title={'Patients Served'}
+            stat={'100,000+'}
+            icon={<GoLocation size={'3em'} />}
+          />
+          <StatsCard
+            title={'Outreaches Conducted'}
+            stat={'208'}
             icon={<GoLocation size={'3em'} />}
           />
         </SimpleGrid>
