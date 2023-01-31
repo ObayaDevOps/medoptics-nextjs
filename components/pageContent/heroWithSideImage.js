@@ -91,10 +91,8 @@ export default function HeroWithSideImage(){
                 mx={{ sm: "auto", lg: 0 }}
                 color="gray.500"
               >
-                Our focus at Med Optics is to develop and lead the Ugandan 
-                ophthalmic and Optometry industry with novel solutions that
-                 advance the existing standard of eye care, and enrich the lives
-                  and treatment alternatives for patients across the country, and beyond.
+                Good vision is essential for our everyday wellbeing and quality of life. The sense of Sight is how we experience the world. It is how we learn, how we remember, and what many fear losing the most. Being able to see clearly allows us to learn, work,
+                and interact with the world around us. That’s why Med Optics teams across the country are driven by a vital mission of improving lives by improving sight. To protect, correct, enhance, and treat.
               </chakra.p>
               <Box
                 mt={{ base: 5, sm: 8 }}

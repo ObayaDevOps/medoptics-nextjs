@@ -18,6 +18,20 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+##  Headless CMS
+For updating the webpage Content, we use Sanity, it can hold any type of content, Images, Text, Videos. Sanity will store the info and deliver it to the webpage quickly using its CDN (Content Delivery Network)
+
+Link: https://www.sanity.io/
+
+To Manage the account, log in to the admin panel:
+
+Link: https://www.sanity.io/manage
+
+To manage the Webpage Content, log into 'Sanity Studio'
+
+Link: https://www.sanity.io/docs/sanity-studio
+
+Learn about Sanity Studio SetUp: https://www.sanity.io/docs/setup-and-deployment
 
 
 ## Image Hosting

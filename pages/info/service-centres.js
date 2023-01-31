@@ -56,6 +56,71 @@ const serviceCentreDetails = [
     linkToExhibition: '',
     followLink:
         'https://www.instagram.com/afropocene/',
+  },
+  {
+    serviceCentreName: 'Case Hospital Eye Dept',
+    address: 'Case Hospital Eye Department, Plots 69-71 Buganda Road',
+    telephone: '0392 177 227',
+    email: 'info@medopticsltd.com',
+    active: true,
+    insuranceCompanies: ['ICIGNA', 'CIC', 'BRITAM', 'APA', 'CASE MEDCARE'],
+    openingHours:"Monday – Friday: 10:00 – 18:00, Saturday: Closed",
+    photo: "Med-Optics-Slide1.png",
+    linkToExhibition: '',
+    followLink:
+        'https://www.instagram.com/afropocene/',
+  },
+  {
+    serviceCentreName: 'Mukono Service Centre',
+    address: 'Mukono Service Center',
+    telephone: '',
+    email: 'mukono@medopticsltd.com',
+    active: true,
+    insuranceCompanies: ['UAP', 'JUBILEE', 'ICEA', 'LIBERTY', 'CASE MEDCARE'],
+    openingHours:"Monday – Friday: 08:00 – 17:00, Saturday: 09:00 – 15:00",
+    photo: "Med-Optics-Slide1.png",
+    linkToExhibition: '',
+    followLink:
+        'https://www.instagram.com/afropocene/',
+  },
+  {
+    serviceCentreName: 'Lubaga Service Center',
+    address: 'Mabirizi Complex, Plot 47, Kampala Road (Opp Antonio’s)',
+    telephone: '0312 370 373',
+    email: 'lubaga@medopticsltd.com',
+    active: true,
+    insuranceCompanies: [''],
+    openingHours:"Monday – Friday: 08:00 – 17:00, Saturday: 09:00 – 15:00",
+    photo: "Med-Optics-Slide1.png",
+    linkToExhibition: '',
+    followLink:
+        'https://www.instagram.com/afropocene/',
+  },
+  {
+    serviceCentreName: 'Masaka City Service Center',
+    address: 'City View Complex, Elgin Street',
+    telephone: '0771 890 100',
+    email: 'masaka@medopticsltd.com',
+    active: true,
+    insuranceCompanies: ['UAP', 'JUBILEE', 'ICEA', 'APA', 'AON-MINET','PRUDENTIAL', 'AAR', 'CASE MEDCARE'],
+    openingHours:"Monday – Friday: 08:00 – 17:00, Saturday: 09:00 – 15:00",
+    photo: "Med-Optics-Slide1.png",
+    linkToExhibition: '',
+    followLink:
+        'https://www.instagram.com/afropocene/',
+  },
+  {
+    serviceCentreName: 'Arua City Service Center',
+    address: 'Avenue Street Opp. Bank of Africa',
+    telephone: '0393 216 151',
+    email: 'arua@medopticsltd.com',
+    active: true,
+    insuranceCompanies: ['UAP', 'JUBILEE', 'SANLAM', 'ICEA', 'AAR','PRUDENTIAL', 'CASE MEDCARE'],
+    openingHours:"Monday – Friday: 08:00 – 17:00, Saturday: 09:00 – 15:00",
+    photo: "Med-Optics-Slide1.png",
+    linkToExhibition: '',
+    followLink:
+        'https://www.instagram.com/afropocene/',
   }
 ];
 
@@ -84,7 +149,7 @@ const BlogTags = (props) => {
     <HStack spacing={2} marginTop={props.marginTop}>
       {props.tags.map((tag) => {
         return (
-          <Tag size={'md'} variant="solid" colorScheme="green" key={tag}>
+          <Tag alignContent="center" size={{base:'xs',lg:'md'}} variant="solid" colorScheme="green" key={tag}  >
             {tag}
           </Tag>
         );
@@ -131,7 +196,7 @@ function ServiceCentreCard(props) {
               </Link>
               </NextLink>
             </Box>
-            <BlogTags tags={insuranceCompanies} marginTop="3" />
+            <BlogTags tags={insuranceCompanies} marginTop="3"  />
             <Heading fontSize="2xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 {serviceCentreName}

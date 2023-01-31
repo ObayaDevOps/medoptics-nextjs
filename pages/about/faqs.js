@@ -367,16 +367,17 @@ export default function SplitWithImage() {
         }}
       >
          {" "}
-        <Text
+         <Text
           display={{
-            base: "block",
-            // lg: "inline",
-          }}
-          w="full"
-          bgClip="text"
-          bgGradient='linear(to-r, green.500, green.300)'
-          fontWeight="extrabold"
-        >
+                base: "block",
+                          // lg: "inline",
+                      }}
+                      w="full"
+                      bgClip="text"
+                      bgGradient='linear(to-r, green.600, green.300)'
+                      fontWeight="extrabold"
+                      transition="all .65s ease" _hover={{ transform: 'scale(1.005)', filter: "brightness(140%)", }}
+                      >
           Frequently Asked Questions
         </Text>{" "}
         
