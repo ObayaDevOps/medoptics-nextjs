@@ -313,11 +313,11 @@ import {
           subLabel: 'Frequently Asked Questions',
           href: '/about/faqs',
         },
-        {
-          label: 'Careers',
-          subLabel: 'Interested in working for us ?',
-          href: '/about/careers',
-        },
+        // {
+        //   label: 'Careers',
+        //   subLabel: 'Interested in working for us ?',
+        //   href: '/about/careers',
+        // },
         // {
         //   label: "How it's Made",
         //   subLabel: 'The Tech Behind this Website',
@@ -325,45 +325,46 @@ import {
         // },
       ],
     },
-    {
-      label: 'Services',
-      children: [
-        // {
-        //   label: 'Products',
-        //   subLabel: 'Frames, Lenses, Contact Lens and more ...',
-        //   href: '/products-and-services/products',
-        // },
-        {
-          label: 'Services',
-          subLabel: 'Book Appointments, Consultations ...',
-          href: '/products-and-services/services',
-        },
-        {
-          label: 'Frame Size Guide',
-          subLabel: 'Guidance for the perfect glasses fit !',
-          href: '/products-and-services/frame-size-guide',
-        },
-      ],
-    }, 
-    {
+    // {
+    //   label: 'Services',
+    //   children: [
+    //     // {
+    //     //   label: 'Products',
+    //     //   subLabel: 'Frames, Lenses, Contact Lens and more ...',
+    //     //   href: '/products-and-services/products',
+    //     // },
+    //     {
+    //       label: 'Services',
+    //       subLabel: 'Book Appointments, Consultations ...',
+    //       href: '/products-and-services/services',
+    //     },
+    //     {
+    //       label: 'Frame Size Guide',
+    //       subLabel: 'Guidance for the perfect glasses fit !',
+    //       href: '/products-and-services/frame-size-guide',
+    //     },
+    //   ],
+    // }, 
+    ,{
       label: 'Book Appointment',
-      children: [
-        {
-          label: 'Eye Test',
-          subLabel: 'Modern Specialist Machinery, Great Service',
-          href: '/appointments/eyeTest',
-        },
-        {
-          label: 'Glasses Fitting',
-          subLabel: "For Maximal Comfort",
-          href: '/appointments/eyeTest',
-        },
-        {
-          label: 'Schedule Collection',
-          subLabel: 'Collect previously ordered items',
-          href: '/appointments/eyeTest',
-        }
-      ],
+      href: '/appointments/eyeTest'
+      // children: [
+      //   {
+      //     label: 'Eye Test',
+      //     subLabel: 'Modern Specialist Machinery, Great Service',
+      //     href: '/appointments/eyeTest',
+      //   },
+      //   {
+      //     label: 'Glasses Fitting',
+      //     subLabel: "For Maximal Comfort",
+      //     href: '/appointments/eyeTest',
+      //   },
+      //   {
+      //     label: 'Schedule Collection',
+      //     subLabel: 'Collect previously ordered items',
+      //     href: '/appointments/eyeTest',
+      //   }
+      // ],
     },   
     {
       label: 'Find Us',
@@ -409,17 +410,17 @@ import {
 
     {
       label: 'Shop',
-      children: [
-        // {
-        //   label: 'Upcoming/Current',
-        //   subLabel: '',
-        //   href: '/workshops/current-workshop',
-        // },
-        {
-          label: 'Workshop Archive',
-          subLabel: '',
-          href: '/workshops/workshops-archive',
-        }
-      ],
+      // children: [
+      //   // {
+      //   //   label: 'Upcoming/Current',
+      //   //   subLabel: '',
+      //   //   href: '/workshops/current-workshop',
+      //   // },
+      //   {
+      //     label: 'Workshop Archive',
+      //     subLabel: '',
+      //     href: '/workshops/workshops-archive',
+      //   }
+      // ],
     }
   ];

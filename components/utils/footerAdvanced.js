@@ -17,7 +17,7 @@ import {
   import NextLink from 'next/link'
 
   import MedOptics20Years from '../../public/images/icon/Med-Optics.svg'
-  import Top100Companies from '../../public/images/icon/Top100Logo.png'
+  import Top100Companies from '../../public/images/icon/Top100Logo.svg'
   import Image from 'next/image'
 
   
