@@ -27,11 +27,22 @@ To Manage the account, log in to the admin panel:
 
 Link: https://www.sanity.io/manage
 
-To manage the Webpage Content, log into 'Sanity Studio'
+To manage the Webpage Content, log into 'Sanity Studio': Just add '/studio' to the end of the URL or 'Admin Panel' in the footer
 
 Link: https://www.sanity.io/docs/sanity-studio
 
 Learn about Sanity Studio SetUp: https://www.sanity.io/docs/setup-and-deployment
+
+
+To Create something new on the webpage, you will need to add a 'Schema' to the codebase:
+
+Learn more: https://www.sanity.io/docs/schemas-and-forms
+
+Note: That only 'document' type schemas will be available to create in the studio, all other lower-type schemas will need to be made of 'documents'
+
+Image Hosting on Sanity: 
+
+
 
 
 ## Image Hosting

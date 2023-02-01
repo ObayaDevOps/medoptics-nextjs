@@ -140,9 +140,9 @@ import {
 
   
     return (
-      <Stack direction={'row'}   spacing={8} paddingTop={5}>
+      <Stack direction={'row'}   spacing={8} paddingTop={{md: 8}} >
         {NAV_ITEMS.map((navItem) => (
-          <Box key={navItem.label}>
+          <Box key={navItem.label} zIndex={9999}>
             <Popover trigger={'hover'} placement={'bottom-start'}>
               <NextLink href={navItem.href ?? '#'} passHref>
                 <PopoverTrigger>

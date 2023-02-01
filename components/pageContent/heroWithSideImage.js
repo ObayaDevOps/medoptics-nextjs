@@ -2,6 +2,11 @@ import React from "react";
 import { chakra, Box, useColorModeValue, Stack, Button, Icon, Image, Heading, Text } from "@chakra-ui/react";
 import NextLink from 'next/link';
 
+import NextImage from 'next/image';
+import { urlForImage } from '../../lib/sanity.image'
+
+//get ServerSideProps - to load the sanity images 
+
 export default function HeroWithSideImage(){
 
   const bg = useColorModeValue("white", "gray.800");
@@ -200,14 +205,38 @@ export default function HeroWithSideImage(){
         w={{ lg: "50%" }}
         border="solid 1px transparent"
       >
-        <Image
+        {/* <Image
           h={[56, 72, 96, "full"]}
           w="full"
           fit="cover"
           src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
           alt=""
           loading="eager"
-        />
+        /> */}
+
+    <Image
+        w="full"
+        layout='fill'
+        h={[56, 72, 96, "full"]}
+        alt={`Cover Image`}
+        fit="cover"
+        src={urlForImage('image-3afb360863fdc0e6fa6fcb015b4bba922f325d8f-2850x1900-jpg').height(1000).width(2000).url()}
+        // sizes="100vw"
+        priority={true}
+      />
+
+      {/* <NextImage
+        w="full"
+        layout='fill'
+        h={[56, 72, 96, "full"]}
+        alt={`Cover Image`}
+        fit="cover"
+        src={urlForImage('image-3afb360863fdc0e6fa6fcb015b4bba922f325d8f-2850x1900-jpg').height(1000).width(2000).url()}
+        // sizes="100vw"
+        priority={true}
+      /> */}
+
+        
       </Box>
     </Box>
   );
