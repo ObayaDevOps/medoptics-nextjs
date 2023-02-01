@@ -66,7 +66,7 @@ import { useInView } from "framer-motion";
             icon={<BsPerson size={'3em'} />}
           />
           <StatsCard
-            title={'Years of Service Excellence'}
+            title={'Years of Excellence'}
             stat={'20'}
             icon={<FiServer size={'3em'} />}
           />
