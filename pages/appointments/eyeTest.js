@@ -11,7 +11,7 @@ export default  function EyeTestCalendar () {
         <link rel="shortcut icon" href="../../../images/icon/uganda.png"></link>
       </Head>
 
-        <InlineWidget url="https://calendly.com/medoptics-test" />
+        <InlineWidget url="https://calendly.com/medoptics" />
       </Box>
     );
 }

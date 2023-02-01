@@ -125,11 +125,11 @@ import {
               <Link href={'/appointments/eyeTest'}>Book Appointment</Link>
             </Stack>
             <Stack align={'flex-start'}>
-              <ListHeader>Support</ListHeader>
-              <Link href={'#'}>Help Center</Link>
+              <ListHeader>Internal</ListHeader>
+              {/* <Link href={'#'}>Help Center</Link>
               <Link href={'#'}>Terms of Service</Link>
               <Link href={'#'}>Legal</Link>
-              <Link href={'#'}>Privacy Policy</Link>
+              <Link href={'#'}>Privacy Policy</Link> */}
               <Link href={'/studio'}>Editor Studio</Link>
               <Link href={'https://www.sanity.io/manage/personal/project/zpkm4qcc'}>Admin Panel</Link>
 
