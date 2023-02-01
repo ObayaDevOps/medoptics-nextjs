@@ -16,7 +16,7 @@ import {
     return (
       <Flex
         w={'full'}
-        h={useBreakpointValue({ base: '70vh', md: '70vh' })}
+        h={useBreakpointValue({ base: '90vh', md: '70vh' })}
         backgroundImage={
           'url(https://images.unsplash.com/photo-1600267175161-cfaa711b4a81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)'
         }
@@ -43,7 +43,7 @@ import {
               Our Value
             </Text>
               <chakra.h2 
-              fontSize="6xl" 
+              fontSize={{base: '5xl', md:"6xl"}} 
               fontWeight="700"
               bgClip="text"
               // bgGradient='linear(to-r, green.600, green.300)'
@@ -62,7 +62,7 @@ import {
               color={'white'}
               fontWeight={700}
               lineHeight={1.2}
-              fontSize={useBreakpointValue({ base: 'sm', md: '2xl' })}>
+              fontSize={useBreakpointValue({ base: 'lg', md: '2xl' })}>
                 At Med Optics Vision Centre, we are proud to offer our patients the latest in state-of-the-art eye care equipment. Our cutting-edge technology allows us to provide accurate and precise diagnoses, as well as effective treatments for a wide range of eye conditions.
                 Our state-of-the-art equipment, combined with the expertise of our highly trained eye care professionals, allows us to provide the highest level of care to our patients.
             </Text>

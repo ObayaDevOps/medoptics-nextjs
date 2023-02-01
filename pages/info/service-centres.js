@@ -204,7 +204,7 @@ function ServiceCentreCard(props) {
               {/* </NextLink> */}
             </Box>
             <BlogTags tags={location} marginTop="3"  />
-            <Heading fontSize="2xl" marginTop="2">
+            <Heading fontSize="3xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 {serviceCentreName}
               </Link>

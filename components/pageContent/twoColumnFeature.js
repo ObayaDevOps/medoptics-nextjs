@@ -90,7 +90,7 @@ import {
               <Text color={'gray.500'} fontSize={'lg'}>
                 With a culture of quality: at the service of customers, employees, and the community, we are unwavering in our pursuit to transform eye care standards and improve patient lives throughout Uganda.
               </Text>
-              <Stack
+              {/* <Stack
                 spacing={4}
   >
                 <Feature
@@ -119,7 +119,7 @@ import {
                   iconBg={useColorModeValue('purple.100', 'purple.900')}
                   text={'200+ Outreaches Conducted'}
                 />
-              </Stack>
+              </Stack> */}
             </Stack>
             <Flex>
             <Image

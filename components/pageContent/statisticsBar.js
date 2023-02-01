@@ -58,7 +58,7 @@ import { useInView } from "framer-motion";
     const ref = useRef(null)
     const isInView = useInView(ref)
     return (
-      <Box maxW="6xl" mx={'auto'} pt={10} px={{ base: 2, sm: 12, md: 17 }}>
+      <Box maxW="6xl" mx={'auto'} pt={{md:1}} px={{ base: 2, sm: 12, md: 17 }}>
         <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ base: 5, lg: 8 }}>
           <StatsCard
             title={'Service Centres'}

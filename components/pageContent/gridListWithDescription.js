@@ -21,7 +21,7 @@ import React, { useRef } from "react";
 import { useInView } from "framer-motion";
   
   
-  const Feature = ({ heading, text1, text2 }) => {
+  const Feature = ({ heading, text1, text2, photo }) => {
     const ref = useRef(null)
     const isInView = useInView(ref)
     return (
@@ -35,12 +35,12 @@ import { useInView } from "framer-motion";
               w="full"
               rounded="lg"
               shadow="2xl"
-              src={getCloudinaryImage('anguyo.jpg')} 
-              alt="Hellonext feedback boards software screenshot"
+              src={getCloudinaryImage(photo)} 
+              alt="Our Services offered"
               width={500}
               height={600} 
               placeholder="blur"
-              blurDataURL={getCloudinaryImageBlur('anguyo.jpg')}
+              blurDataURL={getCloudinaryImageBlur(photo)}
             />
         <chakra.h3 fontSize="xl" fontWeight="600">
           {heading}
@@ -101,18 +101,19 @@ import { useInView } from "framer-motion";
             heading={'Computerized Eye Examination'}
             text1={'Experience clear vision with our comprehensive eye exams and personalized eyewear solutions. '}
             text2={'Our state-of-the-art equipment, combined with the expertise of our highly trained eye care professionals ensures accurate diagnoses and effective treatments, and allows us to provide the highest level of care to our patients'}
-
+            photo={'EyeTest1.jpg'}
           />
           <Feature
             heading={'Made-to-Measure Lenses'}
             text1={'For a full vision performance, an excellent lens alone is not enough. It cannot be perfect if it has not been fitted to each individual wearer. '}
             text2={'Visit Med Optic’s Optical shops across the country and enjoy service tailored to your needs - from precise eye measurement to perfect lens fitting.'}
-
+            photo={'EyeTest2.jpg'}
           />
           <Feature
             heading={'Lifelong Aftercare'}
             text1={'All completed repairs and adjustments undergo rigorous quality control checks and the parts and labour is free for all glass frames.'}
             text2={'The After Sales team supports our clients that have purchased products (eye glasses, contact lenses) made or marketed by Med Optics, from managing returns to warranty policies for eyewear collections, and corrective lenses.'}
+            photo={'EyeTest3.jpg'}
           />
         </Grid>
       </Box>

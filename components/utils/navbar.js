@@ -54,9 +54,9 @@ import {
           <IconButton
               onClick={toggleColorMode}
               icon={
-                colorMode == 'light' ? <MoonIcon color={'green.400'} w={3} h={3} /> : <SunIcon color={'green.100'} w={5} h={5} />
+                colorMode == 'light' ? <MoonIcon color={'green.400'} w={3} h={3} bg={'none'} /> : <SunIcon color={'green.100'} w={5} h={5} />
               }
-              // variant={'ghost'}
+              variant={'ghost'}
               aria-label={'Toggle Navigation'}
             />
         {/* </Button> */}
@@ -118,7 +118,7 @@ import {
   
           <Stack
             flex={{ base: 1, md: 0 }}
-            justify={'center'}
+            justify={'flex-end'}
             direction={'row'}
             spacing={6}>
             <DarkToggleButton />
@@ -133,9 +133,9 @@ import {
   }
   
   const DesktopNav = () => {
-    const linkColor = useColorModeValue('gray.600', 'gray.200');
-    const linkHoverColor = useColorModeValue('gray.800', 'white');
-    const popoverContentBgColor = useColorModeValue('white', 'gray.800');
+    const linkColor = useColorModeValue('green.800', 'green.200');
+    const linkHoverColor = useColorModeValue('green.800', 'white');
+    const popoverContentBgColor = useColorModeValue('white', 'green.800');
     const { colorMode, toggleColorMode } = useColorMode()
 
   
@@ -388,7 +388,7 @@ import {
     },
     {
       label: 'Blog',
-      href: 'https://medoptics-blog-sanity-cms-next-js.vercel.app/',
+      href: 'https://medoptics-blog.vercel.app/',
       // children: [
       //   // {
       //   //   label: 'Upcoming/Current',
