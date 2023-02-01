@@ -23,9 +23,17 @@ For updating the webpage Content, we use Sanity, it can hold any type of content
 
 Link: https://www.sanity.io/
 
-To Manage the account, log in to the admin panel:
+To Manage the account, log in to the admin panel add '/manage' to the end of the URL:
 
 Link: https://www.sanity.io/manage
+
+From here the key info to change is :
+NEXT_PUBLIC_SANITY_PROJECT_ID=XXXXXXX
+NEXT_PUBLIC_SANITY_DATASET=production
+
+These are crucial environment variable and can be changed locally in '.env.local' and on prod in Vercel Dashboard:  project -> settings -> environment variables
+
+Remember, if the URL is changed the CORS will need to be added - Manage Panel :API -> CORS -> add new base url
 
 To manage the Webpage Content, log into 'Sanity Studio': Just add '/studio' to the end of the URL or 'Admin Panel' in the footer
 
@@ -42,6 +50,8 @@ Note: That only 'document' type schemas will be available to create in the studi
 
 Image Hosting on Sanity: 
 
+
+TO C
 
 
 

@@ -130,8 +130,8 @@ import {
               <Link href={'#'}>Terms of Service</Link>
               <Link href={'#'}>Legal</Link>
               <Link href={'#'}>Privacy Policy</Link>
-              <Link href={'#'}>Satus</Link>
-              <Link href={'/studio'}>Admin Panel</Link>
+              <Link href={'/studio'}>Editor Studio</Link>
+              <Link href={'https://www.sanity.io/manage/personal/project/zpkm4qcc'}>Admin Panel</Link>
 
             </Stack>
             <Stack align={'flex-start'}>
