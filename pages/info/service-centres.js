@@ -15,6 +15,7 @@ import {
   useColorMode,
   Container,
   VStack,
+  Show,
   SimpleGrid,
   Avatar
 } from '@chakra-ui/react';
@@ -167,17 +168,6 @@ const BlogTags = (props) => {
   );
 };
 
-// serviceCentreName: 'Arua City Service Center',
-// address: 'Avenue Street Opp. Bank of Africa',
-// location: 'Arua',
-// telephone: '0393 216 151',
-// email: 'arua@medopticsltd.com',
-// active: true,
-// insuranceCompanies: ['UAP', 'JUBILEE', 'SANLAM', 'ICEA', 'AAR','PRUDENTIAL', 'CASE MEDCARE'],
-// openingHours:"Monday – Friday: 08:00 – 17:00, Saturday: 09:00 – 15:00",
-// photo: "Med-Optics-Slide1.png",
-// linkToExhibition: '',
-// followLink:
 
 function ServiceCentreCard(props) {
   const { serviceCentreName, address, location,telephone, email, active, insuranceCompanies, openingHours,
@@ -189,17 +179,32 @@ function ServiceCentreCard(props) {
               {/* <NextLink passHref> */}
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 {/* <NextImage src={photo} ></NextImage> */}
-                <Image
-                  w="full"
-                  rounded="lg"
-                  shadow="2xl"
-                  src={getCloudinaryImage(photo)} 
-                  alt="Hellonext feedback boards software screenshot"
-                  width={1349}
-                  height={550} 
-                  placeholder="blur"
-                  blurDataURL={getCloudinaryImageBlur(photo)}
-                />
+                <Show above='md'>
+                  <Image
+                    w="full"
+                    rounded="lg"
+                    shadow="2xl"
+                    src={getCloudinaryImage(photo)} 
+                    alt="Hellonext feedback boards software screenshot"
+                    width={1349}
+                    height={550} 
+                    placeholder="blur"
+                    blurDataURL={getCloudinaryImageBlur(photo)}
+                  />
+                </Show>
+                <Show below='sm'>
+                  <Image
+                    // w="full"
+                    rounded="lg"
+                    shadow="2xl"
+                    src={getCloudinaryImage(photo)} 
+                    alt="Hellonext feedback boards software screenshot"
+                    width={550}
+                    height={250} 
+                    placeholder="blur"
+                    blurDataURL={getCloudinaryImageBlur(photo)}
+                  />
+                </Show>                
               </Link>
               {/* </NextLink> */}
             </Box>

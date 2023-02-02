@@ -11,7 +11,7 @@ export default function HeroWithSideImage(){
 
   const bg = useColorModeValue("white", "gray.800");
   return (
-    <Box pos="relative" overflow="hidden" bg={bg} mt={0}>
+    <Box pos="relative" overflow="hidden" bg={bg} mt={0} p={{base:5, md: 0}}>
       <Box maxW="7xl" mx="auto">
         <Box
           pos="relative"
@@ -42,7 +42,7 @@ export default function HeroWithSideImage(){
           </Icon>
           <Box
             mx="auto"
-            maxW={{ base: "7xl" }}
+            // maxW={{ base: "7xl" }}
             px={{ base: 4, sm: 6, lg: 8 }}
             mt={{ base: 10, sm: 12, md: 16, lg: 20, xl: 28 }}
           >
@@ -89,7 +89,7 @@ export default function HeroWithSideImage(){
                         in one single place.
                 </Heading>
 
-              <chakra.p
+              {/* <chakra.p
                 mt={{ base: 3, sm: 5, md: 5 }}
                 fontSize={{ sm: "lg", md: "xl" }}
                 maxW={{ sm: "xl" }}
@@ -98,7 +98,15 @@ export default function HeroWithSideImage(){
               >
                 Good vision is essential for our everyday wellbeing and quality of life. The sense of Sight is how we experience the world. It is how we learn, how we remember, and what many fear losing the most. Being able to see clearly allows us to learn, work,
                 and interact with the world around us. That’s why Med Optics teams across the country are driven by a vital mission of improving lives by improving sight. To protect, correct, enhance, and treat.
-              </chakra.p>
+              </chakra.p> */}
+              <chakra.p
+                mt={{ base: 3, sm: 5, md: 5 }}
+                fontSize={{ sm: "lg", md: "xl" }}
+                maxW={{ sm: "xl" }}
+                mx={{ sm: "auto", lg: 0 }}
+                color="gray.500"
+              >
+Med-Optics  is a private company that was established in 2002 to provide a high standard of quality eye care services.  We have modern equipment and experienced staff to take care of all patients’ needs.              </chakra.p>
               <Box
                 mt={{ base: 5, sm: 8 }}
                 display={{ sm: "flex" }}

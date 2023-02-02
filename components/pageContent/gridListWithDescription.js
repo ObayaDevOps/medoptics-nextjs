@@ -41,12 +41,13 @@ import { useInView } from "framer-motion";
               height={600} 
               placeholder="blur"
               blurDataURL={getCloudinaryImageBlur(photo)}
+              
             />
-        <chakra.h3 fontSize="xl" fontWeight="600">
+        <chakra.h3  py={3} fontSize="2xl" fontWeight="600" color="green.800">
           {heading}
         </chakra.h3>
-        <chakra.p>{text1}</chakra.p>
-        <chakra.p>{text2}</chakra.p>
+        <chakra.p py={1}>{text1}</chakra.p>
+        <chakra.p py={1}>{text2}</chakra.p>
 
         </Box>
       </GridItem>
@@ -56,16 +57,17 @@ import { useInView } from "framer-motion";
   
   export default function GridListWithDescription() {
     return (
-      <Box as={Container} maxW="6xl" mt={14} p={4} minHeight={'100vh'}>
+      <Box as={Container} maxW="6xl" mt={14} p={10} minHeight={'100vh'}>
         <Grid
           templateColumns={{
             base: 'repeat(1, 1fr)',
             sm: 'repeat(2, 1fr)',
             md: 'repeat(2, 1fr)',
           }}
-          gap={4}>
+          gap={4}
+          >
           <GridItem colSpan={1}>
-            <VStack alignItems="flex-start" spacing="20px">
+            <VStack alignItems="flex-start" spacing={{base:"5px", md:"20px"}}>
             <Text
               textTransform={'uppercase'}
               color={'green.400'}
@@ -78,12 +80,16 @@ import { useInView } from "framer-motion";
               What We Offer
             </Text>
               <chakra.h2 
-              fontSize="6xl" 
+              fontSize={{base:"5xl",md: "6xl"}}
               fontWeight="700"
               bgClip="text"
               bgGradient='linear(to-r, green.600, green.300)'
               fontWeight="extrabold"
-              
+              letterSpacing={{
+                base: "tight",
+                md: "tight",
+                }}
+              pb={{base: 10}}
               >
                 Our Service Scope
               </chakra.h2>
@@ -96,7 +102,9 @@ import { useInView } from "framer-motion";
             sm: 'repeat(3, 1fr)',
             md: 'repeat(3, 1fr)',
           }}
-          gap={{ base: '8', sm: '12', md: '16' }}>
+          gap={{ base: '20', sm: '12', md: '16' }}
+          pb={{base: 10}}
+          >
           <Feature
             heading={'Computerized Eye Examination'}
             text1={'Experience clear vision with our comprehensive eye exams and personalized eyewear solutions. '}
