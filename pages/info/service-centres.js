@@ -175,7 +175,7 @@ function ServiceCentreCard(props) {
 
   return (
           <Box w="100%">
-            <Box overflow="hidden">
+            <Box overflow="hidden" >
               {/* <NextLink passHref> */}
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 {/* <NextImage src={photo} ></NextImage> */}
@@ -186,8 +186,8 @@ function ServiceCentreCard(props) {
                     shadow="2xl"
                     src={getCloudinaryImage(photo)} 
                     alt="Hellonext feedback boards software screenshot"
-                    width={1349}
-                    height={550} 
+                    width={1000}
+                    height={350} 
                     placeholder="blur"
                     blurDataURL={getCloudinaryImageBlur(photo)}
                   />
@@ -238,7 +238,7 @@ function ServiceCentreCard(props) {
 const ServiceCentreList = () => {
 
   return (
-    <Container maxW={'7xl'} p="3">
+    <Container maxW={'7xl'} p={{base:7, lg:0}}>
       <Head>
         <title>Service Centres | Med-Optics</title>
         <meta name="description" content="Med-Optics Ltd Webpage" />
@@ -249,7 +249,7 @@ const ServiceCentreList = () => {
        as={'h1'}
         mb={6}
         fontSize={{
-          base: "5xl",
+          base: "6xl",
           md: "8xl",
         }}
         minHeight={'1vh'}

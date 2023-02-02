@@ -11,7 +11,7 @@ export default function HeroWithSideImage(){
 
   const bg = useColorModeValue("white", "gray.800");
   return (
-    <Box pos="relative" overflow="hidden" bg={bg} mt={0} p={{base:5, md: 0}}>
+    <Box pos="relative" overflow="hidden" bg={bg} mt={0} p={{base:5, md: 0}} >
       <Box maxW="7xl" mx="auto">
         <Box
           pos="relative"
@@ -22,6 +22,7 @@ export default function HeroWithSideImage(){
           zIndex={1}
           bg={bg}
           border="solid 1px transparent"
+          minHeight={'90vh'}
         >
           <Icon
             display={{ base: "none", lg: "block" }}

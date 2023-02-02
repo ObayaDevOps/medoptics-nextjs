@@ -37,8 +37,8 @@ import { useInView } from "framer-motion";
               shadow="2xl"
               src={getCloudinaryImage(photo)} 
               alt="Our Services offered"
-              width={500}
-              height={600} 
+              width={512}
+              height={341} 
               placeholder="blur"
               blurDataURL={getCloudinaryImageBlur(photo)}
               
@@ -57,7 +57,7 @@ import { useInView } from "framer-motion";
   
   export default function GridListWithDescription() {
     return (
-      <Box as={Container} maxW="6xl" mt={14} p={10} minHeight={'100vh'}>
+      <Box as={Container} maxW="6xl" mt={14} p={10} minHeight={'95vh'}>
         <Grid
           templateColumns={{
             base: 'repeat(1, 1fr)',
