@@ -123,14 +123,15 @@ import {
           <SimpleGrid
             templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }}
             spacing={8}>
-            <Stack spacing={6}>
-              <Box>
-              <NextLink href='/#'>
-                <Image src={useColorModeValue( MedOptics20Years,MedOptics20Years)} width={595} height={134}/>
-                </NextLink>
+            <Stack spacing={6} >
+              <Box text="left">
                 <NextLink href='/#'>
-                <Image src={useColorModeValue( Top100Companies,Top100Companies)} width={395} height={154}/>
-                </NextLink>                  </Box>
+                  <Image src={useColorModeValue( MedOptics20Years,MedOptics20Years)} width={595} height={134}/>
+                </NextLink>
+                <NextLink href='https://www.ugandainvest.go.ug/sme/top-100-smes/'>
+                  <Image src={useColorModeValue( Top100Companies,Top100Companies)} width={395} height={100} />
+                  </NextLink>                  
+                </Box>
               <Text fontSize={'sm'}>
                 © 2023 Med-Optics Ltd. All rights reserved
               </Text>

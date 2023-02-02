@@ -165,19 +165,17 @@ export default function SplitWithImage() {
             
           </Stack>
         </Stack>
-        <Flex>
         <Image
             w="full"
             rounded="lg"
             shadow="2xl"
             src={getCloudinaryImage('anguyo.jpg')} 
             alt="Hellonext feedback boards software screenshot"
-            width={1349}
-            height={550} 
+            width={500}
+            height={500} 
             placeholder="blur"
             blurDataURL={getCloudinaryImageBlur('anguyo.jpg')}
           />
-        </Flex>
       </SimpleGrid>
     </Container>
   );
