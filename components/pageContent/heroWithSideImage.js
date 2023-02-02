@@ -84,7 +84,7 @@ export default function HeroWithSideImage(){
                         fontWeight="extrabold"
                         transition="all .65s ease" _hover={{ transform: 'scale(1.005)', filter: "brightness(140%)", }}
                         >
-                        Eye Health needs
+                        Optical needs
                         </Text>{" "}
                         in one single place.
                 </Heading>

@@ -46,7 +46,7 @@ import {
     return (
       <ScaleFade initialScale={0.6}
       in={isInView}>
-        <Container  maxW={'6xl'}  p={{md:20}} minHeight={"75vh"} centerContent >
+        <Container  maxW={'6xl'}  minHeight={"75vh"} centerContent >
         
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} p={{base:7, md: 0}}>
             <Stack spacing={4}       ref={ref}>
