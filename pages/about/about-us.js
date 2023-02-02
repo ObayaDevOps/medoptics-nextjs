@@ -8,6 +8,8 @@ import {
   StackDivider,
   Icon,
   useColorModeValue,
+  UnorderedList,
+  ListItem
 } from '@chakra-ui/react';
 import {
   IoAnalyticsSharp,
@@ -33,7 +35,7 @@ const Feature = ({ text, icon, iconBg }) => {
         bg={iconBg}>
         {icon}
       </Flex>
-      <Text fontWeight={600}>{text}</Text>
+      <Text fontWeight={550}>{text}</Text>
     </Stack>
   );
 };
@@ -42,7 +44,7 @@ export default function SplitWithImage() {
   return (
 
     
-    <Container maxW={'5xl'} py={12}>
+    <Container maxW={'6xl'} py={12} minHeight={{md:'110vh'}}>
       <Head>
         <title>About Us | MedOptics Ltd</title>
         <meta name="description" content="MedOptics Ltd Webpage" />
@@ -99,51 +101,68 @@ export default function SplitWithImage() {
             Our Story
           </Text>
           <Heading>A Modern Eye-Care Specialist</Heading>
-          <Text color={'gray.500'} fontSize={'lg'}>
-                For the past 20 years, Med Optics Vision Centre has paved a path of firsts in Uganda’s vision care Industry, challenging the boundaries to create opportunities in eye health care and deliver the best outcomes for patients.
-              </Text>
               <Text color={'gray.500'} fontSize={'lg'}>
-                Our focus at Med Optics is to develop and lead the Ugandan ophthalmic and Optometry industry with novel solutions that advance the existing standard of eye care, and enrich the lives and treatment alternatives for patients across the country, and beyond.
-              </Text>
-              <Text color={'gray.500'} fontSize={'lg'}>
-                Our inspiration is to help our clients see better, connect better, and live to the fullest. Our vision also extends to our collaborations, education and community efforts to bring new solutions to those in need.
-              </Text>
-              <Text color={'gray.500'} fontSize={'lg'}>
-                With a culture of quality: at the service of customers, employees, and the community, we are unwavering in our pursuit to transform eye care standards and improve patient lives throughout Uganda.
+              Mr Anguyo Dralega our founder and Managing director returned from the UK in 2001 to contribute to the development of Optometry in Uganda. Having completed his Masters of Optometry at the University of Bradford in the UK, he returned home to find a fledgeling industry: no regulation, no standards and no accountability. Thus Med-Optics was borne of the conviction that Uganda can and should have high quality, accurate vision care services.
               </Text>
           <Stack
             spacing={4}
-            divider={
-              <StackDivider
-                borderColor={useColorModeValue('gray.100', 'gray.700')}
-              />
-            }>
+            // divider={
+            //   <StackDivider
+            //     borderColor={useColorModeValue('gray.100', 'gray.700')}
+            //   />
+            // }
+            
+            >
             <Feature
               icon={
                 <Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />
               }
               iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-              text={'9 Service Centres'}
+              text={'Registered with the Optical Council UK '}
             />
             <Feature
               icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
               iconBg={useColorModeValue('green.100', 'green.900')}
-              text={'20 Years of Service'}
+              text={'Member of the Association of Optometrists, UK'}
             />
             <Feature
               icon={
                 <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
               }
               iconBg={useColorModeValue('purple.100', 'purple.900')}
-              text={'100,000 patients served'}
+              text={'Chairman of the Legislation Committee of Optometrist Association of Uganda,'}
             />
-                        <Feature
+            <Feature
               icon={
                 <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
               }
               iconBg={useColorModeValue('purple.100', 'purple.900')}
-              text={'200+ Outreaches Conducted'}
+              text={'Former President of African Council of Optometry,Governing Board'}
             />
+            <Feature
+              icon={
+                <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
+              }
+              iconBg={useColorModeValue('purple.100', 'purple.900')}
+              text={'Member of World Council of Optometry'}
+            />
+            <Feature
+              icon={
+                <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
+              }
+              iconBg={useColorModeValue('purple.100', 'purple.900')}
+              text={'Head of Department for Allied Health Department & Coordinator for the Optometry Program, Makerere University'}
+            />
+            <Feature
+              icon={
+                <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
+              }
+              iconBg={useColorModeValue('purple.100', 'purple.900')}
+              text={'Accredited member of the Ultra Lase Eye-Care Co-management scheme: for pre and post laser operation screening, UK.'}
+            />
+
+            
+            
           </Stack>
         </Stack>
         <Flex>

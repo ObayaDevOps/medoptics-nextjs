@@ -53,6 +53,15 @@ Image Hosting on Sanity:
 
 TO C
 
+## Email Form Submission
+
+This website uses 'nodemailer': https://nodemailer.com/about/
+
+Change the vercel environment variables / .env.local
+
+SMTP_USER=XXXXXXXXXXX@gmail.com
+SMTP_PASSWORD=XXXXXXXXXXXX
+RECIPIENT_ADDRESS=XXXXXXXXXXXXX@gmail.com
 
 
 ## Image Hosting

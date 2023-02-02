@@ -101,7 +101,7 @@ import {
           <NextLink href='/#' passHref>
             <Link>
             <Show above='md'>
-              <NextImage src={colorMode === 'light' ? MedOptics20Years:  MedOptics20Years} width={(300)} height={(90)}/>
+              <NextImage src={colorMode === 'light' ? MedOptics20Years:  MedOptics20Years} width={(350)} height={(90)}/>
             </Show>
             <Show below='md'>
               <NextImage src={colorMode === 'light' ? MedOpticsBoxLogo:  MedOpticsBoxLogo} width={(50)} height={(50)}/>
