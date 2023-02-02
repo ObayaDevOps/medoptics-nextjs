@@ -82,7 +82,7 @@ import {
           // borderBottom={1}
           borderStyle={'solid'}
           borderColor={useColorModeValue('gray.200', 'gray.900')}
-          align={'center'}
+          align={'unset'}
           >
           <Flex
             flex={{ base: 1, md: 'auto' }}
@@ -97,15 +97,15 @@ import {
               aria-label={'Toggle Navigation'}
             />
           </Flex>
-          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'space-evenly' }}>
+          <Flex flex={{ base: 3 }} justify={{ base: 'center', md: 'space-evenly' }} p={2}>
           <NextLink href='/#' passHref>
             <Link>
-            <Show above='md'>
+            {/* <Show above='md'> */}
               <NextImage src={colorMode === 'light' ? MedOptics20Years:  MedOptics20Years} width={(350)} height={(90)}/>
-            </Show>
+            {/* </Show>
             <Show below='md'>
-              <NextImage src={colorMode === 'light' ? MedOpticsBoxLogo:  MedOpticsBoxLogo} width={(50)} height={(50)}/>
-            </Show>
+              <NextImage src={colorMode === 'light' ? MedOptics20Years:  MedOptics20Years} width={(350)} height={(90)}/>
+            </Show> */}
 
                 
             </Link>

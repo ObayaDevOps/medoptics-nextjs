@@ -168,6 +168,12 @@ import {
               <Link href={'#'}>Privacy Policy</Link> */}
               <Link href={'/studio'}>Editor Studio</Link>
               <Link href={'https://www.sanity.io/manage/personal/project/zpkm4qcc'}>Admin Panel</Link>
+              <Link href={'https://calendly.com/event_types/user/me'}>Calendar Panel</Link>
+              <Link href={'https://cloudinary.com/console/c-323989889f21929f38a964a71e3f0d/media_library/folders/home?'}>Images Panel</Link>
+
+
+              
+
 
             </Stack>
             <Stack align={'flex-start'}>
