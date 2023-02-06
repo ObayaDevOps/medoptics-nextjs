@@ -74,6 +74,8 @@ React/NextJs SetUp: https://cloudinary.com/documentation/react_quick_start
 Next Js Image Optimisation and Set Up : https://vercel.com/docs/concepts/image-optimization/remote-images
 Getting Blurred Placeholders: https://spacejelly.dev/posts/how-to-use-cloudinary-images-in-next-js-with-blurred-placeholders/
 
+## Analytics
+
 
 ## Useful UI Components
  ChakraUI:https://chakra-ui.com/docs/
@@ -91,6 +93,17 @@ Run your URL through this to view your speed.
 Lighthouse WebPortal: https://pagespeed.web.dev/
 
 Vercel Web Vitals:https://vercel.com/docs/concepts/analytics/web-vitals
+
+Vercel Monitors Audience For:
+    - Visitors
+    - Page views
+    - Top Visited Pages
+    - Top Referrers (where clicks came from)
+    - Countries
+    - Operating Systems
+    - Browsers
+
+Link: https://vercel.com/obayadevops/medoptics/analytics/audience
 
 
 Audience/Visitor Analytics: https://vercel.com/docs/concepts/analytics/audiences

@@ -42,7 +42,7 @@ import {
               p={2}
               alignSelf={'flex-start'}
               rounded={'md'}>
-              Our Value
+              Why Choose Us?
             </Text>
               <chakra.h2 
               fontSize={{base: '5xl', md:"6xl"}} 
@@ -57,7 +57,7 @@ import {
                 }}
                 pb={{base:5}}
               >
-                Our State-Of-The-Art Eye Care Equipment
+                State-Of-The-Art Eye Care Equipment
               </chakra.h2>
             </VStack>
 

@@ -254,7 +254,7 @@ import {
                 </Stack>
 
               <Text fontSize={'sm'} fontWeight={"bold"}>   
-                Address
+                HQ Address
               </Text>
 
               <Text fontSize={'sm'}>   

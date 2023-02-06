@@ -61,7 +61,7 @@ const serviceCentreDetails = [
         'https://www.instagram.com/afropocene/',
   },
   {
-    serviceCentreName: 'Case Hospital Eye Dept',
+    serviceCentreName: 'Aponye Hospital Eye Dept',
     address: 'Case Hospital Eye Department, Plots 69-71 Buganda Road',
     location: ['Kampala'],
     telephone: '0392 177 227',

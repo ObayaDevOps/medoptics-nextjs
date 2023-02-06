@@ -106,7 +106,7 @@ import { useInView } from "framer-motion";
           pb={{base: 10}}
           >
           <Feature
-            heading={'Computerized Eye Examination'}
+            heading={'Comprehensive Eye Examination'}
             text1={'Experience clear vision with our comprehensive eye exams and personalized eyewear solutions. '}
             text2={'Our state-of-the-art equipment, combined with the expertise of our highly trained eye care professionals ensures accurate diagnoses and effective treatments, and allows us to provide the highest level of care to our patients'}
             photo={'EyeTest1.jpg'}

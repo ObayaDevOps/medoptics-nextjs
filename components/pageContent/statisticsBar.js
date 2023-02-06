@@ -62,22 +62,22 @@ import { useInView } from "framer-motion";
         <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ base: 5, lg: 8 }} p={{base:7}}>
           <StatsCard
             title={'Service Centres'}
-            stat={'9'}
+            stat={'7'}
             icon={<BsPerson size={'3em'} />}
           />
           <StatsCard
             title={'Years of Excellence'}
-            stat={'20'}
+            stat={'21'}
             icon={<FiServer size={'3em'} />}
           />
           <StatsCard
             title={'Patients Served'}
-            stat={'100,000+'}
+            stat={'70,000+'}
             icon={<GoLocation size={'3em'} />}
           />
           <StatsCard
             title={'Outreaches Conducted'}
-            stat={'208'}
+            stat={'200+'}
             icon={<GoLocation size={'3em'} />}
           />
         </SimpleGrid>

@@ -106,7 +106,7 @@ import {
                     src={getCloudinaryImage('anguyo.jpg')} 
                     alt="Hellonext feedback boards software screenshot"
                     width={1349}
-                    height={1700} 
+                    height={1400} 
                     placeholder="blur"
                     blurDataURL={getCloudinaryImageBlur('anguyo.jpg')}
                   />

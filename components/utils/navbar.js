@@ -72,17 +72,19 @@ import {
     const { colorMode, toggleColorMode } = useColorMode()
   
     return (
-      <Box>
+      <Box >
         <Flex
           bg={useColorModeValue('white', 'gray.800')}
           color={useColorModeValue('gray.600', 'white')}
-          minH={'60px'}
-          py={{ base: 2 }}
-          px={{ base: 4 }}
+          // minH={'60px'}
+          maxHeight={'10vh'}
+          py={{ base: 6, md:0 }}
+          px={{ base: 8 }}
           // borderBottom={1}
           borderStyle={'solid'}
           borderColor={useColorModeValue('gray.200', 'gray.900')}
           align={'unset'}
+          zIndex={9999}
           >
           <Flex
             flex={{ base: 1, md: 'auto' }}
@@ -101,7 +103,7 @@ import {
           <NextLink href='/#' passHref>
             <Link>
             {/* <Show above='md'> */}
-              <NextImage src={colorMode === 'light' ? MedOptics20Years:  MedOptics20Years} width={(350)} height={(90)}/>
+              <NextImage src={colorMode === 'light' ? MedOptics20Years:  MedOptics20Years} width={(300)} height={(80)}/>
             {/* </Show>
             <Show below='md'>
               <NextImage src={colorMode === 'light' ? MedOptics20Years:  MedOptics20Years} width={(350)} height={(90)}/>

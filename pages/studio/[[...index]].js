@@ -8,7 +8,7 @@ import {
 
 export default function Index() {
     return (
-        <Box minHeight={'100vh'}>
+        <Box minHeight={'120vh'}>
             <Head>
                 <title>Sanity Studio| MedOptics Ltd</title>
                   <meta name="description" content="MedOptics Ltd Webpage" />
