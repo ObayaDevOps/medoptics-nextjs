@@ -5,8 +5,8 @@ import Image from 'next/image'
 import HeadImage from '../public/images/icon/africa.png'
 import { buildUrl } from 'cloudinary-build-url';
 
-
 export default function Home() {
+
   return (
     <div >
       <Head>

@@ -86,7 +86,18 @@ Getting Blurred Placeholders: https://spacejelly.dev/posts/how-to-use-cloudinary
  Chakra Themeing: https://chakra-ui.com/docs/styled-system/customize-theme#theme-extension-withdefaultcolorscheme
 
 
+## ODOO Integration:
 
+Env Variables:
+ODOO_URL=XXXX
+ODOO_PORT=XXXX
+ODOO_DATABASE=XXXX
+ODOO_USERNAME=XXXX
+ODOO_PASSWORD=XXXX
+
+
+
+uses npm package as a client: https://github.com/faisalsami/odoo-xmlrpc
 
 ## Analytics + Testing Performance
 Run your URL through this to view your speed. 

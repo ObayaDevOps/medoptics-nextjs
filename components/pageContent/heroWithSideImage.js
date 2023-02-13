@@ -7,7 +7,12 @@ import { urlForImage } from '../../lib/sanity.image'
 
 //get ServerSideProps - to load the sanity images 
 
-export default function HeroWithSideImage(){
+export default function HeroWithSideImage(props){
+  const { posts, settings } = props
+  const [heroPost, ...morePosts] = posts || []
+
+
+
 
   const bg = useColorModeValue("white", "gray.800");
   return (
@@ -85,7 +90,8 @@ export default function HeroWithSideImage(){
                         fontWeight="extrabold"
                         transition="all .65s ease" _hover={{ transform: 'scale(1.005)', filter: "brightness(140%)", }}
                         >
-                        Optical Needs
+                        {/* Optical Needs */}
+                        {heroPost.title}
                         </Text>{" "}
                         in one single place.
                 </Heading>

@@ -306,6 +306,45 @@ const ServiceCentreList = () => {
   );
 };
 
+// export async function getServerSideProps() {
+
+//   var Odoo = require('odoo-xmlrpc');
+
+//   var odoo = new Odoo({
+//     url:'https://erp.medopticsltd.com',
+//     port: 443,
+//     db: 'erp',
+//     username: 'audrey@medopticsltd.com',
+//     password: 'J@maica22?'
+// });
+
+
+// // odoo.connect(function (err) {
+// //   if (err) { return console.log(err); }
+// //   console.log('Connected to Odoo server!');    
+// // });
+
+// //Now get a list of all products
+// odoo.connect(function (err) {
+//   if (err) { return console.log(err); }
+//   console.log('Connected to Odoo server.');
+  
+//   var inParams = [];
+//   inParams.push([['name']]);
+//   var params = [];
+//   params.push(inParams);
+
+//   odoo.execute_kw('stock.inventory', 'search', params, function (err, value) {
+//       if (err) { return console.log(err); }
+
+//       console.log('Result: ', value);
+//   });
+// });
+
+//     return {props: {products: "data"}};
+// };
+
+
 export default ServiceCentreList;
 
 
