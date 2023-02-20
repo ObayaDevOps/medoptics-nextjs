@@ -11,19 +11,23 @@ import ThreeFeature from './threeFeatures';
 import CallToActionBanner from './callToActionBanner';
 import WithSpeechBubbles from './testimonials';
 
-import { getAllPosts, getSettings } from '../../lib/sanity.client'
-// import { Post, Settings } from 'lib/sanity.queries'
-import { GetStaticProps } from 'next'
-import { PreviewSuspense } from '@sanity/preview-kit'
+
+
+
 
 
 
 // pass the sanity retrieved data in here - first just display the text below Heading
 export default function CallToActionWithAnnotation(props) {
-  const { posts, settings, preview, token } = props
+  const { posts } = props
 
   console.log("PRoject ID:");
-  console.log(process.env.NEXT_PUBLIC_SANITY_PROJECT_ID);
+  console.log(process.env.NEXT_PUBLIC_SANITY_DATASET);
+  console.log(props); //confirmed link - here we have all the props
+  //now pass the parts needed into each of the compoenents
+
+  //see what content they need
+
 
   return (
     <>
@@ -34,7 +38,7 @@ export default function CallToActionWithAnnotation(props) {
         />
       </Head>
 
-      <HeroWithSideImage loading preview posts={posts} settings={settings} />
+      <HeroWithSideImage />
       <ThreeFeature />
       <TwoColumnFeature />
       <BasicStatistics />
@@ -49,21 +53,21 @@ export default function CallToActionWithAnnotation(props) {
 
 
 
-export const getStaticProps = async (ctx) => {
-  const { preview = false, previewData = {} } = ctx
+// export const getStaticProps = async (ctx) => {
+//   const { preview = false, previewData = {} } = ctx
 
-  const [settings, posts = []] = await Promise.all([
-    getSettings(),
-    getAllPosts(),
-  ])
+//   const [settings, posts = []] = await Promise.all([
+//     getSettings(),
+//     getAllPosts(),
+//   ])
 
-  return {
-    props: {
-      posts,
-      settings,
-      preview,
-      token: previewData.token ?? null,
-    },
-    revalidate: 10, // In seconds
-  }
-}
+//   return {
+//     props: {
+//       posts,
+//       settings,
+//       preview,
+//       token: previewData.token ?? null,
+//     },
+//     revalidate: 10, // In seconds
+//   }
+// }

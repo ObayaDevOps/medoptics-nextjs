@@ -7,12 +7,7 @@ import { urlForImage } from '../../lib/sanity.image'
 
 //get ServerSideProps - to load the sanity images 
 
-export default function HeroWithSideImage(props){
-  const { posts, settings } = props
-  const [heroPost, ...morePosts] = posts || []
-
-
-
+export default function HeroWithSideImage(){
 
   const bg = useColorModeValue("white", "gray.800");
   return (
@@ -90,8 +85,7 @@ export default function HeroWithSideImage(props){
                         fontWeight="extrabold"
                         transition="all .65s ease" _hover={{ transform: 'scale(1.005)', filter: "brightness(140%)", }}
                         >
-                        {/* Optical Needs */}
-                        {heroPost.title}
+                        Optical Needs
                         </Text>{" "}
                         in one single place.
                 </Heading>
@@ -229,6 +223,8 @@ Med-Optics  is a private company that was established in 2002 to provide a high 
           loading="eager"
         /> */}
 
+    {/* {example of working Sanity Image Retreival } */}
+    {/* Replace with full page schema */}
     <Image
         w="full"
         layout='fill'
