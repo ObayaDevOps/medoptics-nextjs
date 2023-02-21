@@ -13,7 +13,8 @@ import {
   import { useInView } from "framer-motion";
   import Image from 'next/image';
   import { getCloudinaryImage, getCloudinaryImageBlur } from '../../components/utils/cloudinaryImageRetreival';
-  
+  import { urlForImage } from '../../lib/sanity.image'
+
 
   
   
@@ -41,7 +42,10 @@ import {
   };
   
   export default function TwoColumnFeature(props) {
-    const pageContent = props.content;
+    const pageContent = props.content;  
+    const coverImageRef= pageContent.coverImage.asset._ref;
+
+
 
     const ref = useRef(null)
     const isInView = useInView(ref)
@@ -89,7 +93,7 @@ import {
             </Stack>
             <Flex pb={{base:10}}>
               <Show below='sm'>
-                <Image
+                {/* <Image
                     w="full"
                     rounded="lg"
                     shadow="2xl"
@@ -99,7 +103,7 @@ import {
                     height={1450} 
                     placeholder="blur"
                     blurDataURL={getCloudinaryImageBlur('anguyo.jpg')}
-                  />
+                  /> */}
                   <Image
                     w="full"
                     layout='fill'
