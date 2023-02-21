@@ -18,21 +18,20 @@ import sanityClient from "@sanity/client";
 const client = sanityClient({ 
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
-  apiVersion: "2023-01-13"
+  apiVersion: "v2023-02-21"
   })
 
 
 
   export async function getStaticProps() {
-    // const posts = await client.fetch(`*[_type == "landingPage"]`);
-    const posts = await client.fetch(`
-    *[_type == "post"]`);
+    const landingPageContent = await client.fetch(`
+    *[_type == "landingPage"]`);
+    // const posts = await client.fetch(`
+    // *[_type == "post"]`);
 
-  
-  
     return {
       props: {
-        posts
+        landingPageContent
       }
     };
   }
@@ -53,7 +52,7 @@ export default function Home(props) {
       </Head>
 
       <Box>
-        <LandingPage posts={props.posts} />
+        <LandingPage pageContent={props.landingPageContent} />
       </Box>
 
     </div>

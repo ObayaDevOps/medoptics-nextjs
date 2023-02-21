@@ -55,7 +55,9 @@ import { useInView } from "framer-motion";
     );
   };
   
-  export default function GridListWithDescription() {
+  export default function GridListWithDescription(props) {
+    const pageContent = props.content;
+
     return (
       <Box as={Container} maxW="6xl" mt={14} p={10} minHeight={'95vh'}>
         <Grid

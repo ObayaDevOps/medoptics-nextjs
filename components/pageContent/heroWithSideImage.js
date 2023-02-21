@@ -7,9 +7,13 @@ import { urlForImage } from '../../lib/sanity.image'
 
 //get ServerSideProps - to load the sanity images 
 
-export default function HeroWithSideImage(){
+export default function HeroWithSideImage(props){
+  const pageContent = props.content;
+  const coverImageRef= pageContent.coverImage.asset._ref;
+
 
   const bg = useColorModeValue("white", "gray.800");
+  console.log(coverImageRef);
   return (
     <Box pos="relative" overflow="hidden" bg={bg} mt={0} p={{base:5, md: 0}} >
       <Box maxW="7xl" mx="auto">
@@ -53,7 +57,6 @@ export default function HeroWithSideImage(){
               justifyContent="center"
               alignItems="center"
             >
-
                 <Heading
                     as={'h1'}
                         mb={6}
@@ -73,11 +76,10 @@ export default function HeroWithSideImage(){
                         color: "green.100",
                         }}
                     >
-                        All your {" "}
+                        {pageContent.headingTop}
                         <Text
                         display={{
                             base: "block",
-                            // lg: "inline",
                         }}
                         w="full"
                         bgClip="text"
@@ -85,21 +87,12 @@ export default function HeroWithSideImage(){
                         fontWeight="extrabold"
                         transition="all .65s ease" _hover={{ transform: 'scale(1.005)', filter: "brightness(140%)", }}
                         >
-                        Optical Needs
+                        {pageContent.headingMiddleHighlight}
                         </Text>{" "}
-                        in one single place.
+                        {pageContent.headingBottom}
                 </Heading>
 
-              {/* <chakra.p
-                mt={{ base: 3, sm: 5, md: 5 }}
-                fontSize={{ sm: "lg", md: "xl" }}
-                maxW={{ sm: "xl" }}
-                mx={{ sm: "auto", lg: 0 }}
-                color="gray.500"
-              >
-                Good vision is essential for our everyday wellbeing and quality of life. The sense of Sight is how we experience the world. It is how we learn, how we remember, and what many fear losing the most. Being able to see clearly allows us to learn, work,
-                and interact with the world around us. That’s why Med Optics teams across the country are driven by a vital mission of improving lives by improving sight. To protect, correct, enhance, and treat.
-              </chakra.p> */}
+
               <chakra.p
                 mt={{ base: 3, sm: 5, md: 5 }}
                 fontSize={{ sm: "lg", md: "xl" }}
@@ -107,7 +100,8 @@ export default function HeroWithSideImage(){
                 mx={{ sm: "auto", lg: 0 }}
                 color="gray.500"
               >
-Med-Optics  is a private company that was established in 2002 to provide a high standard of quality eye care services.  We have modern equipment and experienced staff to take care of all patients’ needs.              </chakra.p>
+              {pageContent.subheading}
+             </chakra.p> 
               <Box
                 mt={{ base: 5, sm: 8 }}
                 display={{ sm: "flex" }}
@@ -197,10 +191,6 @@ Med-Optics  is a private company that was established in 2002 to provide a high 
                   </Button>
                 </NextLink>
             </Stack>
-    
-
-
-
               </Box> 
             </Box>
           </Box>
@@ -231,23 +221,10 @@ Med-Optics  is a private company that was established in 2002 to provide a high 
         h={[56, 72, 96, "full"]}
         alt={`Cover Image`}
         fit="cover"
-        src={urlForImage('image-3afb360863fdc0e6fa6fcb015b4bba922f325d8f-2850x1900-jpg').height(1000).width(2000).url()}
+        src={urlForImage(coverImageRef).height(1000).width(2000).url()}
         // sizes="100vw"
         priority={true}
-      />
-
-      {/* <NextImage
-        w="full"
-        layout='fill'
-        h={[56, 72, 96, "full"]}
-        alt={`Cover Image`}
-        fit="cover"
-        src={urlForImage('image-3afb360863fdc0e6fa6fcb015b4bba922f325d8f-2850x1900-jpg').height(1000).width(2000).url()}
-        // sizes="100vw"
-        priority={true}
-      /> */}
-
-        
+      />    
       </Box>
     </Box>
   );

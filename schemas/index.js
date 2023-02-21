@@ -1,7 +1,8 @@
 // ./schemas/index.js
 import post from '../schemas/post'
 import author from '../schemas/author'
-import photo from './photo'
+import photo from '../schemas/photo'
+import landingPage from '../schemas/landingPage'
 
 
-export const schemaTypes = [post, author, photo]
+export const schemaTypes = [post, author, photo, landingPage]

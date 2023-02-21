@@ -12,7 +12,9 @@ import {
   } from '@chakra-ui/react';
 
   
-  export default function FullWidthBannerWithBackgroundImage({props}) {
+  export default function FullWidthBannerWithBackgroundImage(props) {
+    const pageContent = props.content;
+
     return (
       <Flex
         w={'full'}

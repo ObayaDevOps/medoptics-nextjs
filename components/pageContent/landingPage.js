@@ -11,23 +11,12 @@ import ThreeFeature from './threeFeatures';
 import CallToActionBanner from './callToActionBanner';
 import WithSpeechBubbles from './testimonials';
 
-
-
-
-
-
-
-// pass the sanity retrieved data in here - first just display the text below Heading
 export default function CallToActionWithAnnotation(props) {
-  const { posts } = props
+  const landingPageContent  = props.pageContent[0] || [];
 
   console.log("PRoject ID:");
   console.log(process.env.NEXT_PUBLIC_SANITY_DATASET);
-  console.log(props); //confirmed link - here we have all the props
-  //now pass the parts needed into each of the compoenents
-
-  //see what content they need
-
+  console.log(landingPageContent); //confirmed link - here we have all the props
 
   return (
     <>
@@ -38,36 +27,15 @@ export default function CallToActionWithAnnotation(props) {
         />
       </Head>
 
-      <HeroWithSideImage />
-      <ThreeFeature />
-      <TwoColumnFeature />
-      <BasicStatistics />
-      <GridListWithDescription />
-      <FullWidthBannerWithBackgroundImage />
-      <WithSpeechBubbles />
-      <CallToActionBanner />
+      <HeroWithSideImage content={landingPageContent}  />
+      <ThreeFeature content={landingPageContent} />
+      <TwoColumnFeature content={landingPageContent} />
+      <BasicStatistics content={landingPageContent} />
+      <GridListWithDescription content={landingPageContent} />
+      <FullWidthBannerWithBackgroundImage content={landingPageContent} />
+      <WithSpeechBubbles content={landingPageContent} />
+      <CallToActionBanner content={landingPageContent} />
 
     </>
   );
 }
-
-
-
-// export const getStaticProps = async (ctx) => {
-//   const { preview = false, previewData = {} } = ctx
-
-//   const [settings, posts = []] = await Promise.all([
-//     getSettings(),
-//     getAllPosts(),
-//   ])
-
-//   return {
-//     props: {
-//       posts,
-//       settings,
-//       preview,
-//       token: previewData.token ?? null,
-//     },
-//     revalidate: 10, // In seconds
-//   }
-// }

@@ -39,16 +39,15 @@ const Feature = (props) => {
         textAlign="center"
       >
         {props.children}
-      </chakra.p>
- 
-
-      
+      </chakra.p> 
     </Box>
   );
 };
 
 
-export default function ThreeFeature(){
+export default function ThreeFeature(props){
+  const pageContent = props.content;
+
   const ref = useRef(null)
   const isInView = useInView(ref)
 
@@ -78,7 +77,8 @@ export default function ThreeFeature(){
         shadow="sm"
       >
         <Feature
-          title="Need Immediate Eye Care?"
+          title={pageContent.threeFeatureTitle1}
+
           icon={
             <path
               strokeLinecap="round"
@@ -88,13 +88,11 @@ export default function ThreeFeature(){
             />
           }
         >
-          Our experts, including top-ranked ophthalmologists, 
-          optometrists, and opticians, are available at our nine 
-          convenient locations across Uganda.
+          {pageContent.threeFeatureText1}
         </Feature>
 
         <Feature
-          title="Make an Appointment"
+          title={pageContent.threeFeatureTitle2}
           icon={
             <path
               fillRule="evenodd"
@@ -103,13 +101,11 @@ export default function ThreeFeature(){
             />
           }
         >
-        We have in-person and virtual visits available. 
-        Call us at +256 414 340 099.
-
+          {pageContent.threeFeatureText2}
         </Feature>
 
         <Feature
-          title="Plan your Visit"
+          title={pageContent.threeFeatureTitle3}
           icon={
             <path
               strokeLinecap="round"
@@ -119,8 +115,7 @@ export default function ThreeFeature(){
             />
           }
         >
-          Don't let vision problems hold you back
-           - visit us for expert eye care and optical treatment.
+          {pageContent.threeFeatureText1}
         </Feature>
       </SimpleGrid>
     </Flex>

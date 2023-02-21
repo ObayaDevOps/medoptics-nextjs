@@ -54,7 +54,9 @@ import { useInView } from "framer-motion";
     );
   }
   
-  export default function BasicStatistics() {
+  export default function BasicStatistics(props) {
+    const pageContent = props.content;
+
     const ref = useRef(null)
     const isInView = useInView(ref)
     return (
