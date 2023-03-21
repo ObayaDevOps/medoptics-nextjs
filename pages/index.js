@@ -26,7 +26,7 @@ const client = sanityClient({
 
   export async function getStaticProps() {
     const landingPageContent = await client.fetch(`
-    *[_type == "landingPage"]`);
+    *[_type == "landingPage"]`, { next: { revalidate: 60 } });
     // const posts = await client.fetch(`
     // *[_type == "post"]`);
 
