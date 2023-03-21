@@ -119,15 +119,29 @@ export default function WithSpeechBubbles(props) {
                 'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
               }
               name={'Alexandre P'}
-              title={'CEO at ABC Corporation'}
+              title={'COO'}
             />
           </Testimonial>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Intuitive Design</TestimonialHeading>
+              <TestimonialHeading>Family Favourite</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
+              My children have grown up with Med-Optics. A caring, friendly and professional service. We wouldn't go anywhere else for our eye-care.
+              </TestimonialText>
+            </TestimonialContent>
+            <TestimonialAvatar
+              src={
+                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+              }
+              name={'Mary Kamure'}
+              title={'Teacher'}
+            />
+          </Testimonial>
+          <Testimonial>
+            <TestimonialContent>
+              <TestimonialHeading>Reliablity</TestimonialHeading>
+              <TestimonialText>
+                I always receive prompt service with a smile! I will be coming back soon!
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -135,23 +149,7 @@ export default function WithSpeechBubbles(props) {
                 'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
               }
               name={'Jane Cooper'}
-              title={'CEO at ABC Corporation'}
-            />
-          </Testimonial>
-          <Testimonial>
-            <TestimonialContent>
-              <TestimonialHeading>Mindblowing Service</TestimonialHeading>
-              <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
-              </TestimonialText>
-            </TestimonialContent>
-            <TestimonialAvatar
-              src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
-              }
-              name={'Jane Cooper'}
-              title={'CEO at ABC Corporation'}
+              title={'CEO'}
             />
           </Testimonial>
         </Stack>
