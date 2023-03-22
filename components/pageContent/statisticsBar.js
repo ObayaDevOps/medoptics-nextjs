@@ -29,7 +29,7 @@ import { useInView } from "framer-motion";
         py={'5'}
         shadow={'xl'}
         border={'1px solid'}
-        borderColor={useColorModeValue('gray.800', 'gray.500')}
+        borderColor={useColorModeValue('green.800', 'green.500')}
         rounded={'lg'}
         ref={ref}
         >
@@ -44,7 +44,7 @@ import { useInView } from "framer-motion";
           </Box>
           <Box
             my={'auto'}
-            color={useColorModeValue('gray.800', 'gray.200')}
+            color={useColorModeValue('green.800', 'green.200')}
             alignContent={'center'}>
             {icon}
           </Box>
@@ -54,30 +54,32 @@ import { useInView } from "framer-motion";
     );
   }
   
-  export default function BasicStatistics() {
+  export default function BasicStatistics(props) {
+    const pageContent = props.content;
+
     const ref = useRef(null)
     const isInView = useInView(ref)
     return (
-      <Box maxW="6xl" mx={'auto'} pt={10} px={{ base: 2, sm: 12, md: 17 }}>
-        <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ base: 5, lg: 8 }}>
+      <Box maxW="6xl" mx={'auto'} pt={{md:1}} px={{ base: 2, sm: 12, md: 17 }}>
+        <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ base: 5, lg: 8 }} p={{base:7}}>
           <StatsCard
             title={'Service Centres'}
-            stat={'9'}
+            stat={'7'}
             icon={<BsPerson size={'3em'} />}
           />
           <StatsCard
-            title={'Years of Service Excellence'}
-            stat={'20'}
+            title={'Years of Excellence'}
+            stat={'21'}
             icon={<FiServer size={'3em'} />}
           />
           <StatsCard
             title={'Patients Served'}
-            stat={'100,000+'}
+            stat={'70,000+'}
             icon={<GoLocation size={'3em'} />}
           />
           <StatsCard
             title={'Outreaches Conducted'}
-            stat={'208'}
+            stat={'200+'}
             icon={<GoLocation size={'3em'} />}
           />
         </SimpleGrid>

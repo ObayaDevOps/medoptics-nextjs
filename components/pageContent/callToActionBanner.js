@@ -3,7 +3,9 @@ import { chakra, Box, Flex, Stack, Button, Icon } from "@chakra-ui/react";
 import NextLink from 'next/link';
 
 
-export default function CallToActionBanner(){
+export default function CallToActionBanner(props){
+  const pageContent = props.content;
+
   return (
     <Flex
       // bg="#edf3f8"

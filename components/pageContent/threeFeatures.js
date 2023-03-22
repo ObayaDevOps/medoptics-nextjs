@@ -1,21 +1,26 @@
-import { chakra, Box, SimpleGrid, Flex, Icon, ScaleFade, } from "@chakra-ui/react";
+import { chakra, Box, SimpleGrid, Flex,Center, Icon, ScaleFade, } from "@chakra-ui/react";
 import React, { useRef } from "react";
 import { useInView } from "framer-motion";
 
 const Feature = (props) => {
   return (
     <Box minHeight='1vh'>
+      <Center>
       <Icon
         boxSize={12}
         _light={{ color: "green.700" }}
         mb={4}
         fill="none"
-        viewBox="0 0 24 24"
+        viewBox="0 0 21 24"
         stroke="currentColor"
         aria-hidden="true"
+        alignItems="center"
+
       >
         {props.icon}
       </Icon>
+      </Center>
+      <Center>
       <chakra.h3
         mb={3}
         fontSize="lg"
@@ -25,19 +30,24 @@ const Feature = (props) => {
       >
         {props.title}
       </chakra.h3>
+      </Center>
+      
       <chakra.p
         lineHeight="tall"
         color="gray.600"
         _dark={{ color: "gray.50" }}
+        textAlign="center"
       >
         {props.children}
-      </chakra.p>
+      </chakra.p> 
     </Box>
   );
 };
 
 
-export default function ThreeFeature(){
+export default function ThreeFeature(props){
+  const pageContent = props.content;
+
   const ref = useRef(null)
   const isInView = useInView(ref)
 
@@ -67,7 +77,8 @@ export default function ThreeFeature(){
         shadow="sm"
       >
         <Feature
-          title="Need Immediate Eye Care?"
+          title={pageContent.threeFeatureTitle1}
+
           icon={
             <path
               strokeLinecap="round"
@@ -77,13 +88,11 @@ export default function ThreeFeature(){
             />
           }
         >
-          Our experts, including top-ranked ophthalmologists, 
-          optometrists, and opticians, are available at our nine 
-          convenient locations across Uganda.
+          {pageContent.threeFeatureText1}
         </Feature>
 
         <Feature
-          title="Make an Appointment"
+          title={pageContent.threeFeatureTitle2}
           icon={
             <path
               fillRule="evenodd"
@@ -92,13 +101,11 @@ export default function ThreeFeature(){
             />
           }
         >
-        We have in-person and virtual visits available. 
-        Call us at +256 414 340 099.
-
+          {pageContent.threeFeatureText2}
         </Feature>
 
         <Feature
-          title="Plan your Visit"
+          title={pageContent.threeFeatureTitle3}
           icon={
             <path
               strokeLinecap="round"
@@ -108,8 +115,7 @@ export default function ThreeFeature(){
             />
           }
         >
-          Don't let vision problems hold you back
-           - visit us for expert eye care and optical treatment.
+          {pageContent.threeFeatureText1}
         </Feature>
       </SimpleGrid>
     </Flex>
