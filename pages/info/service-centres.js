@@ -24,7 +24,6 @@ import Head from 'next/head'
 import NextLink from 'next/link'
 import NextImage from 'next/image'
 
-import odurMuwawaPhoto from '../../public/images/exhibitions/odur-muwawa-kla-art/odur-studio-plants.jpg'
 import { getCloudinaryImage, getCloudinaryImageBlur } from '../../components/utils/cloudinaryImageRetreival';
 
 
@@ -39,7 +38,7 @@ const serviceCentreDetails = [
     telephone: '0393 216 102',
     email: 'forestmall@medopticsltd.com',
     active: true,
-    insuranceCompanies: ['UAP', 'JUBILEE', 'ICEA', 'APA', 'AON-MINET', 'CASE MEDCARE'],
+    insuranceCompanies: ['UAP, ', 'JUBILEE, ', 'ICEA, ', 'APA, ', 'AON-MINET, ', 'CASE MEDCARE, '],
     openingHours:"Monday – Friday: 08:00 – 17:00, Saturday: 09:00 – 15:00",
     photo: "forestmall.png",
     linkToExhibition: '',
@@ -53,7 +52,7 @@ const serviceCentreDetails = [
     telephone: '0312 370 373',
     email: 'mabirizi@medopticsltd.com',
     active: true,
-    insuranceCompanies: ['UAP', 'JUBILEE', 'ICEA', 'APA', 'AON-MINET', 'CASE MEDCARE'],
+    insuranceCompanies: ['UAP, ', 'JUBILEE, ', 'ICEA, ', 'APA, ', 'AON-MINET, ', 'CASE MEDCARE, '],
     openingHours:"Monday – Friday: 08:00 – 17:00, Saturday: 09:00 – 15:00",
     photo: "mabirizi.png",
     linkToExhibition: '',
@@ -67,7 +66,7 @@ const serviceCentreDetails = [
     telephone: '0392 177 227',
     email: 'info@medopticsltd.com',
     active: true,
-    insuranceCompanies: ['ICIGNA', 'CIC', 'BRITAM', 'APA', 'CASE MEDCARE'],
+    insuranceCompanies: ['ICIGNA, ', 'CIC, ', 'BRITAM, ', 'APA, ', 'CASE MEDCARE, '],
     openingHours:"Monday – Friday: 10:00 – 18:00, Saturday: Closed",
     photo: "casehospital.png",
     linkToExhibition: '',
@@ -95,7 +94,7 @@ const serviceCentreDetails = [
     telephone: '',
     email: 'mukono@medopticsltd.com',
     active: true,
-    insuranceCompanies: ['UAP', 'JUBILEE', 'ICEA', 'LIBERTY', 'CASE MEDCARE'],
+    insuranceCompanies: ['UAP, ', 'JUBILEE, ', 'ICEA, ', 'LIBERTY, ', 'CASE MEDCARE, '],
     openingHours:"Monday – Friday: 08:00 – 17:00, Saturday: 09:00 – 15:00",
     photo: "mukono.png",
     linkToExhibition: '',
@@ -109,7 +108,7 @@ const serviceCentreDetails = [
     telephone: '0771 890 100',
     email: 'masaka@medopticsltd.com',
     active: true,
-    insuranceCompanies: ['UAP', 'JUBILEE', 'ICEA', 'APA', 'AON-MINET','PRUDENTIAL', 'AAR', 'CASE MEDCARE'],
+    insuranceCompanies: ['UAP, ', 'JUBILEE, ', 'ICEA, ', 'APA, ', 'AON-MINET, ','PRUDENTIAL, ', 'AAR, ', 'CASE MEDCARE, '],
     openingHours:"Monday – Friday: 08:00 – 17:00, Saturday: 09:00 – 15:00",
     photo: "Masaka.png",
     linkToExhibition: '',
@@ -123,7 +122,7 @@ const serviceCentreDetails = [
     telephone: '0393 216 151',
     email: 'arua@medopticsltd.com',
     active: true,
-    insuranceCompanies: ['UAP', 'JUBILEE', 'SANLAM', 'ICEA', 'AAR','PRUDENTIAL', 'CASE MEDCARE'],
+    insuranceCompanies: ['UAP, ', 'JUBILEE, ', 'SANLAM, ', 'ICEA, ', 'AAR,','PRUDENTIAL, ', 'CASE MEDCARE, '],
     openingHours:"Monday – Friday: 08:00 – 17:00, Saturday: 09:00 – 15:00",
     photo: "arua.png",
     linkToExhibition: '',

@@ -11,9 +11,13 @@ import {
   ScaleFade
 } from '@chakra-ui/react';
 
+
+
 import React, { useRef } from "react";
 import { useInView } from "framer-motion";
   
+
+import  { AlexImage } from '../../public/images/testimonial/Alex.jpeg'
 
 const Testimonial = ({ children }) => {
   const ref = useRef(null)
@@ -115,9 +119,8 @@ export default function WithSpeechBubbles(props) {
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
-              src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
-              }
+              src=
+              'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1686134260/Alex_qkkwr3.jpg'             
               name={'Alexandre P'}
               title={'COO'}
             />
@@ -131,8 +134,8 @@ export default function WithSpeechBubbles(props) {
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
-              }
+                'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1686134428/pexels-emmy-e-2381069_he6ive.jpg'
+                }
               name={'Mary Kamure'}
               title={'Teacher'}
             />

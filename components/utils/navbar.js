@@ -118,13 +118,14 @@ import {
             </Flex>
           </Flex>
   
-          <Stack
+            {/* Night light button Here  */}
+          {/* <Stack
             flex={{ base: 1, md: 0 }}
             justify={'flex-end'}
             direction={'row'}
             spacing={6}>
             <DarkToggleButton />
-          </Stack>
+          </Stack> */}
         </Flex>
   
         <Collapse in={isOpen} animateOpacity>
@@ -306,67 +307,49 @@ import {
       label: 'About',
       children: [
         {
-          label: 'Who We Are',
-          subLabel: 'Our Journey',
-          href: '/about/about-us',
+          label: 'About Us',
+          subLabel: 'Ask The Optometrist',
+          href: '/about/ask-the-optometrist',
         },
         {
-          label: 'FAQs',
-          subLabel: 'Frequently Asked Questions',
-          href: '/about/faqs',
+          label: 'Who We Are',
+          subLabel: '',
+          href: '/about/who-we-are',
         },
-        // {
-        //   label: 'Careers',
-        //   subLabel: 'Interested in working for us ?',
-        //   href: '/about/careers',
-        // },
-        // {
-        //   label: "How it's Made",
-        //   subLabel: 'The Tech Behind this Website',
-        //   href: '/about/how-this-was-built',
-        // },
+        {
+          label: 'People Trust Us',
+          subLabel: '',
+          href: '/about/people-trust-us',
+        },
+        {
+          label: 'Meet The Team',
+          subLabel: '',
+          href: '/about/meet-the-team',
+        },
       ],
     },
-    // {
-    //   label: 'Services',
-    //   children: [
-    //     // {
-    //     //   label: 'Products',
-    //     //   subLabel: 'Frames, Lenses, Contact Lens and more ...',
-    //     //   href: '/products-and-services/products',
-    //     // },
-    //     {
-    //       label: 'Services',
-    //       subLabel: 'Book Appointments, Consultations ...',
-    //       href: '/products-and-services/services',
-    //     },
-    //     {
-    //       label: 'Frame Size Guide',
-    //       subLabel: 'Guidance for the perfect glasses fit !',
-    //       href: '/products-and-services/frame-size-guide',
-    //     },
-    //   ],
-    // }, 
+    {
+      label: 'Services',
+      children: [
+        {
+          label: 'What We Offer',
+          subLabel: 'Products and Services',
+
+          href: '/products-and-services/what-we-offer',
+        },
+        {
+          label: 'Service Scope',
+          href: '/products-and-services/service-scope',
+        },
+        {
+          label: 'Our Value and Equipment',
+          href: '/products-and-services/value-equipment',
+        },
+      ],
+    }, 
     ,{
       label: 'Book Appointment',
       href: '/appointments/eyeTest'
-      // children: [
-      //   {
-      //     label: 'Eye Test',
-      //     subLabel: 'Modern Specialist Machinery, Great Service',
-      //     href: '/appointments/eyeTest',
-      //   },
-      //   {
-      //     label: 'Glasses Fitting',
-      //     subLabel: "For Maximal Comfort",
-      //     href: '/appointments/eyeTest',
-      //   },
-      //   {
-      //     label: 'Schedule Collection',
-      //     subLabel: 'Collect previously ordered items',
-      //     href: '/appointments/eyeTest',
-      //   }
-      // ],
     },   
     {
       label: 'Find Us',
@@ -381,48 +364,47 @@ import {
           subLabel: " ",
           href: '/info/contact-enquiry',
         },
-        // {
-        //   label: '4FR0P0C3N3 43VR',
-        //   subLabel: 'Conceptual Blockchain Art',
-        //   href: '/tech/asciiTorus',
-        // }
       ],
     },
     {
       label: 'Blog',
-      href: 'https://medoptics-blog.vercel.app/',
-      // children: [
-      //   // {
-      //   //   label: 'Upcoming/Current',
-      //   //   subLabel: '',
-      //   //   href: '/exhibitions/current-exhibition',
-      //   // },
-      //   // {
-      //   //   label: 'Exhibition Archive',
-      //   //   subLabel: '',
-      //   //   href: '/exhibitions/exhibitions-archive',
-      //   // },
-      //   // {
-      //   //   label: 'Museum Of Selves',
-      //   //   subLabel: 'Collaborative Exhibition and Youth Workshop',
-      //   //   href: '/exhibitions/museum-of-selves-exhibition',
-      //   // }
-      // ],
+      children: [
+        {
+          label: 'News and Updates',
+          href: 'https://medoptics-blog.vercel.app/',
+        },
+        {
+          label: 'Frequently Asked Questions',
+          href: '/blog/faqs',
+        },
+        // {
+        //   label: 'Client Testimonials',
+        //   href: '/blog/client-testimonials',
+        // }
+      ],
     },
 
-    {
-      label: 'Shop',
-      // children: [
-      //   // {
-      //   //   label: 'Upcoming/Current',
-      //   //   subLabel: '',
-      //   //   href: '/workshops/current-workshop',
-      //   // },
-      //   {
-      //     label: 'Workshop Archive',
-      //     subLabel: '',
-      //     href: '/workshops/workshops-archive',
-      //   }
-      // ],
-    }
+    // {
+    //   label: 'Shop',
+    //   children: [
+    //     {
+    //       label: 'Promotions',
+    //       subLabel: '',
+    //       href: '/shop/promotions',
+    //     }
+    //   ],
+    // },
+
+    // {
+    //   label: 'Careers',
+    //   children: [
+    //     {
+    //       label: 'Open Positions',
+    //       subLabel: '',
+    //       href: '/careers/open-positions',
+    //     }
+    //   ],
+    // },
+
+
   ];

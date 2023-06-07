@@ -155,10 +155,10 @@ import {
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Company</ListHeader>
-              <Link href={'/about/about-us'}>About us</Link>
-              <Link href={'#'}>Blog</Link>
+              <Link href={'about/who-we-are'}>About us</Link>
+              <Link href={'https://medoptics-blog.vercel.app/'}>Blog</Link>
               <Link href={'/info/contact-enquiry'}>Contact us</Link>
-              <Link href={'/products-and-services/services'}>Services</Link>
+              <Link href={'/products-and-services/what-we-offer'}>Services</Link>
               <Link href={'/appointments/eyeTest'}>Book Appointment</Link>
             </Stack>
             <Stack align={'flex-start'}>
@@ -178,80 +178,7 @@ import {
 
             </Stack>
             <Stack align={'flex-start'}>
-              <ListHeader>Stay up to date</ListHeader>
-              <Stack direction={'row'}>
-              <form onSubmit={(e) => userData(e)}>
-                  {/* <Input
-                    placeholder={'Your email address'}
-                    bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
-                    border={0}
-                    _focus={{
-                      bg: 'whiteAlpha.300',
-                    }}
-                  /> */}
-
-<FormControl isRequired>
-
-<InputGroup>
-                        <InputLeftElement>
-                          <MdOutlineEmail />
-                        </InputLeftElement>
-                        <Input
-                          id="email"
-                          type="email"
-                          name="email"
-                          placeholder="Your Email"
-                        />
-                      </InputGroup>
-                    </FormControl>
-
-
-
-                  {/* <IconButton
-                    bg={useColorModeValue('green.400', 'green.800')}
-                    color={useColorModeValue('white', 'gray.800')}
-                    _hover={{
-                      bg: 'green.600',
-                    }}
-                    aria-label="Subscribe"
-                    icon={<BiMailSend />}
-                    type="submit"
-                    onClick={() =>
-                      toast({
-                        title: 'Message Sent.',
-                        description: "We will get back to you soon!",
-                        status: 'success',
-                        duration: 9000,
-                        isClosable: true,
-                      })}
-                  /> */}
-
-                    <Button
-                    type="submit"
-                      colorScheme="green"
-                      bg="green.400"
-                      color="white"
-                      _hover={{
-                        bg: 'green.500',
-                      }}
-                      p={2}
-                      onClick={() =>
-                        toast({
-                          title: 'Email Submitted !.',
-                          description: "We will get back to you soon!",
-                          status: 'success',
-                          duration: 9000,
-                          isClosable: true,
-                        })}
-      
-                        size='xs'
-                      >
-                      Submit Email
-                    </Button>
-
-
-              </form>
-                </Stack>
+              
 
               <Text fontSize={'sm'} fontWeight={"bold"}>   
                 HQ Address

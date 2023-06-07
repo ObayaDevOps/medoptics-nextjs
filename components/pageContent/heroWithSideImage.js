@@ -61,8 +61,8 @@ export default function HeroWithSideImage(props){
                     as={'h1'}
                         mb={6}
                         fontSize={{
-                        base: "5xl",
-                        md: "8xl",
+                        base: "6xl",
+                        md: "9xl",
                         }}
                         // minHeight={'1vh'}
                         fontWeight="bold"

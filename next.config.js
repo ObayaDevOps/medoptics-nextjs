@@ -8,7 +8,7 @@
 
 module.exports = {
   images: {
-    domains: ['res.cloudinary.com'],
+    domains: ['res.cloudinary.com','cdn.sanity.io'],
   },
   webpack: (config, { nextRuntime }) => {
     // Undocumented property of next 12.

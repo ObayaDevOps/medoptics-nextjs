@@ -8,14 +8,13 @@ import {
     useColorModeValue,
     ScaleFade,
     Show,
+    Box
   } from '@chakra-ui/react';
   import React, { useRef } from "react";
   import { useInView } from "framer-motion";
   import Image from 'next/image';
   import { getCloudinaryImage, getCloudinaryImageBlur } from '../../components/utils/cloudinaryImageRetreival';
   import { urlForImage } from '../../lib/sanity.image'
-
-
   
   
   const Feature = ({ text, icon, iconBg }) => {
@@ -68,7 +67,7 @@ import {
                 Who We Are
               </Text>
               <Heading
-              fontSize={'5xl'}
+              fontSize={{base: '3xl', md:'5xl'}}
               bgClip="text"
               bgGradient='linear(to-r, green.600, green.300)'
               fontWeight="extrabold"
@@ -91,46 +90,34 @@ import {
               </Text>
 
             </Stack>
-            <Flex pb={{base:10}}>
+            <Box>
               <Show below='sm'>
-                {/* <Image
-                    w="full"
+                  <Image
                     rounded="lg"
                     shadow="2xl"
                     src={getCloudinaryImage('anguyo.jpg')} 
                     alt="Hellonext feedback boards software screenshot"
-                    width={1349}
-                    height={1450} 
+                    width={984}
+                    height={1026} 
                     placeholder="blur"
                     blurDataURL={getCloudinaryImageBlur('anguyo.jpg')}
-                  /> */}
-                  <Image
-                    w="full"
-                    layout='fill'
-                    h={[56, 72, 96, "full"]}
-                    alt={`Cover Image`}
-                    fit="cover"
-                    src={urlForImage(coverImageRef).height(1000).width(2000).url()}
-                    // sizes="100vw"
-                    priority={true}
-                  />  
-
+                  />
                   
               </Show>
               <Show above='md'>
                 <Image
-                    w="full"
+                    // w="full"
                     rounded="lg"
                     shadow="2xl"
                     src={getCloudinaryImage('anguyo.jpg')} 
                     alt="Hellonext feedback boards software screenshot"
-                    width={1349}
-                    height={1400} 
+                    width={984}
+                    height={1026} 
                     placeholder="blur"
                     blurDataURL={getCloudinaryImageBlur('anguyo.jpg')}
                   />
               </Show>
-            </Flex>
+              </Box>
           </SimpleGrid>
         </Container>
       </ScaleFade>

@@ -1,5 +1,5 @@
 import React from "react";
-import { chakra, Box, Flex, Stack, Button, Icon } from "@chakra-ui/react";
+import { chakra, Box, Flex, Stack, Button, Icon, Text } from "@chakra-ui/react";
 import NextLink from 'next/link';
 
 
@@ -36,13 +36,19 @@ export default function CallToActionBanner(props){
             color="gray.900"
             _dark={{ color: "gray.100" }}
           >
-            <chakra.span display="block">Ready to dive in?</chakra.span>
+            <chakra.span display="block">
+              <Text color='green.700'>
+                Ready to dive in?
+                </Text>
+                </chakra.span>
             <chakra.span
               display="block"
               color="brand.600"
               _dark={{ color: "gray.500" }}
             >
+              <Text color='green.700'>
               Get your eyes checked today!
+              </Text>
             </chakra.span>
           </chakra.h2>
           <Stack
