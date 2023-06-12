@@ -30,8 +30,6 @@ import {
   import theme from '../utils/theme'
 
   import NextImage from 'next/image'
-  import africaIcon from '../../public/images/icon/africa.png'
-  import africaIconWhite from '../../public/images/icon/africa-white-icon.png'
   import MedOpticsBoxLogo from '../../public/images/icon/medoptics-logo-mini-square.jpeg'
   import MedOptics20Years from '../../public/images/icon/Med-Optics.svg'
 

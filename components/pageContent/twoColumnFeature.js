@@ -102,6 +102,9 @@ import {
                     placeholder="blur"
                     blurDataURL={getCloudinaryImageBlur('anguyo.jpg')}
                   />
+              <Text color={'gray.500'} fontSize={'lg'}>
+              Mr. Anguyo Dralega, Managing Director, Founder
+              </Text>
                   
               </Show>
               <Show above='md'>
@@ -116,7 +119,11 @@ import {
                     placeholder="blur"
                     blurDataURL={getCloudinaryImageBlur('anguyo.jpg')}
                   />
+                  <Text color={'gray.500'} fontSize={'lg'}>
+              Mr. Anguyo Dralega, Managing Director, Founder
+              </Text>
               </Show>
+
               </Box>
           </SimpleGrid>
         </Container>
