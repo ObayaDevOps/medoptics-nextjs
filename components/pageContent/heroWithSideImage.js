@@ -59,6 +59,7 @@ export default function HeroWithSideImage(props){
             >
                 <Heading
                     as={'h1'}
+                      lineHeight='normal'
                         mb={6}
                         fontSize={{
                         base: "6xl",
@@ -66,7 +67,7 @@ export default function HeroWithSideImage(props){
                         }}
                         // minHeight={'1vh'}
                         fontWeight="bold"
-                        lineHeight="none"
+                        // lineHeight="none"
                         letterSpacing={{
                         base: "normal",
                         md: "tight",

@@ -415,7 +415,7 @@ export default function SplitWithImage() {
         }}
         minHeight={'1vh'}
         fontWeight="bold"
-        lineHeight="none"
+        lineHeight="normal"
         letterSpacing={{
           base: "normal",
           md: "tight",

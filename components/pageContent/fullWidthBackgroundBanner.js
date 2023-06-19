@@ -138,8 +138,7 @@ import {
               fontWeight={700}
               lineHeight={1.2}
               fontSize={useBreakpointValue({ base: 'lg', md: '2xl', lg: '4xl' })}>
-                We exist to make sure you and your loved ones have the best vision possible we protected enhanced vision through comprehensive examinations with the expertise of our highly trained optimists and by equipping them with state-of-the-art equipment we want you to look good too so we offer a great range of lens'.
-
+                We exist to make sure you and your loved ones have the best vision possible. We protect and enhance vision through comprehensive examinations with the expertise of our highly trained optometrists and by equipping them with state-of-the-art equipment you can be assured of the best quality care. We want you to look good too, so we offer a great range of frames and lenses.
             </Text>
           </Stack>
         </VStack>

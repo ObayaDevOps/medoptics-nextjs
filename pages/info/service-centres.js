@@ -68,7 +68,7 @@ const serviceCentreDetails = [
     active: true,
     insuranceCompanies: ['UAP, ', 'APA, ', 'ICEA, ', 'MARIE STOPES'],
     openingHours:"Monday – Friday: 10:00 – 18:00, Saturday: Closed",
-    photo: "casehospital.png",
+    photo: "aponye_f6lixf.png",
     linkToExhibition: '',
     followLink:
         'https://www.instagram.com/afropocene/',
@@ -82,7 +82,7 @@ const serviceCentreDetails = [
     active: true,
     insuranceCompanies: ['UAP, ', 'CIGNA, ', 'APA, ', 'MARIE STOPES '],
     openingHours:"Monday – Friday: 08:00 – 17:00, Saturday: 09:00 – 15:00",
-    photo: "lubaga.png",
+    photo: "lubaga_sermov.jpg",
     linkToExhibition: '',
     followLink:
         'https://www.instagram.com/afropocene/',
@@ -96,7 +96,7 @@ const serviceCentreDetails = [
     active: true,
     insuranceCompanies: ['UAP, ', 'JUBILEE, ', 'ICEA, ', 'LIBERTY, ', 'APA,  ', 'MARIE STOPES, ', 'BOU '],
     openingHours:"Monday – Friday: 08:00 – 17:00, Saturday: 09:00 – 15:00",
-    photo: "mukono.png",
+    photo: "mukono_ctpr1s.jpg",
     linkToExhibition: '',
     followLink:
         'https://www.instagram.com/afropocene/',
@@ -124,7 +124,7 @@ const serviceCentreDetails = [
     active: true,
     insuranceCompanies: ['UAP, ', 'JUBILEE, ', 'ICEA, ','PRUDENTIAL, ', 'GA, ', 'LIBERTY, ', 'MARIE STOPES '],
     openingHours:"Monday – Friday: 08:00 – 17:00, Saturday: 09:00 – 15:00",
-    photo: "arua.png",
+    photo: "arua_wqdswp.jpg",
     linkToExhibition: '',
     followLink:
         '',
