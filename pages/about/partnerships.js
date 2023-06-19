@@ -46,7 +46,7 @@ import {
       
       <Container maxW={'6xl'} py={12} minHeight={{md:'110vh'}}>
         <Head>
-          <title> People Trust Us | MedOptics Ltd</title>
+          <title> Partnerships | MedOptics Ltd</title>
           <meta name="description" content="MedOptics Ltd Webpage" />
           {/* <link rel="shortcut icon" href="../public/favicon.ico"></link> */}
           <link rel="shortcut icon" href="../../../images/icon/medoptics-logo-mini-square.jpeg"></link>
@@ -82,7 +82,7 @@ import {
             bgGradient='linear(to-r, green.500, green.300)'
             fontWeight="extrabold"
           >
-            Why People Trust Us
+            Partnerships
           </Text>{" "}
           
         </Heading>
@@ -119,7 +119,7 @@ import {
             At our core, we firmly believe in the age-old adage that "teamwork makes the dream work." That's why we collaborate with a diverse range of partners both locally and internationally, who share our unwavering commitment to improving eye health in Uganda.
             </Text>
 
-            {/* <Heading>Our Partnerships</Heading>
+            <Heading>Our Partnerships</Heading>
             <SimpleGrid columns={{ base: 2, md: 3 }} spacing={5}>
                 <Image
                     // w="full"
@@ -221,7 +221,7 @@ import {
                     blurDataURL={getCloudinaryImageBlur('anguyo.jpg')}
                 />                                                                                                                                
 
-            </SimpleGrid> */}
+            </SimpleGrid>
 
             <Text color={'gray.500'} fontSize={'lg'}>
             We also offer optical care packages for corporate bodies. Ask us for details.

@@ -90,8 +90,13 @@ import {
 
   
   
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} paddingBottom={10}>
-            <Box>
+        <SimpleGrid columns={{ base: 1, md: 2 }} 
+                spacing={'20'}
+                mt={16}
+                mx={'auto'}
+    >
+                <Box w="100%">
+            <Box overflow='hidden'>
               <Heading pb={3}>Lens Types</Heading>
               <Text color={'gray.500'} fontSize={'lg'} pb={3} >
               We offer single vision, bi-focal and progressive lenses. Your Optometrist and Optical Assistant will give you information on the various lens features and coatings available. 
@@ -109,17 +114,21 @@ import {
                       blurDataURL={getCloudinaryImageBlur('IMG_9687_hxrtym.jpg')}
                     />
             </Box>
+            </Box>
 
 
-            <Box>
-            <Heading>Lens Coatings</Heading>
-            <Text color={'gray.500'} fontSize={'lg'}>
+            <Box w="100%">
+
+            <Box overflow='hidden'>
+            <Heading pb={3}>Lens Coatings</Heading>
+            <Text color={'gray.500'} fontSize={'lg'} pb={30} marginBottom={10}>
             We offer a range of features to enhance the functionality of our lenses. These include anti-glare coating to protect against harsh white light and photo-chromic technology that darkens in sunlight to safeguard sensitive eyes from harmful UV rays. In addition, we can customize your lenses with a tint to create a personalized pair of prescription sunglasses.
             </Text>
             <Image
                     w="full"
                     rounded="lg"
                     shadow="2xl"
+                    pt={20}
                     src={getCloudinaryImage('pexels-ferenc-tóth-700728_cbpvry.jpg')} 
                     alt="Hellonext feedback boards software screenshot"
                     width={5184}
@@ -128,11 +137,13 @@ import {
                     blurDataURL={getCloudinaryImageBlur('pexels-ferenc-tóth-700728_cbpvry.jpg')}
                   />
             </Box>
+            </Box>
+
 
             <Box>
-            <Heading>Contact Lenses</Heading>
+            <Heading pb={3}>Contact Lenses</Heading>
             <Text color={'gray.500'} fontSize={'lg'}>
-            Contact lens examination and fitting is quite a lengthy and specialized service. It is currently available only at Forest Mall branch (link to Contact Us). However, for clients who need to purchase contact lens solutions, they are available in several branches. Contact us for availability.
+            Contact lens examination and fitting is quite a lengthy and specialized service. It is currently available only at Forest Mall branch. However, for clients who need to purchase contact lens solutions, they are available in several branches. Contact us for availability.
             </Text>
             <Image
                     w="full"
@@ -148,9 +159,9 @@ import {
             </Box>
 
             <Box>
-            <Heading>Sunglasses</Heading>
+            <Heading pb={3}>Sunglasses</Heading>
             <Text color={'gray.500'} fontSize={'lg'}>
-            To avoid damage from prolonged exposure to UV rays, it is always best to but 100% UV Protection shades. They are available in all our centres from only UGX 50,000.            </Text>
+            To avoid damage from prolonged exposure to UV rays, it is always best to buy 100% UV Protection shades. They are available in all our centres from only UGX 50,000.            </Text>
             <Image
                     w="full"
                     rounded="lg"
@@ -165,8 +176,8 @@ import {
             </Box>
 
             <Box>
-            <Heading>Frames</Heading>
-            <Text color={'gray.500'} fontSize={'lg'}>
+            <Heading pb={3}>Frames</Heading>
+            <Text color={'gray.500'} fontSize={'lg'} pb={20}>
             Med-Optics offers a vast collection of frames in diverse styles, colors, and sizes, catering to everyone's preferences. 
             </Text>
             <Image
@@ -183,7 +194,7 @@ import {
             </Box>
 
             <Box>
-            <Heading>Accessories</Heading>
+            <Heading pb={3}>Accessories</Heading>
             <Text color={'gray.500'} fontSize={'lg'}>
             In addition to providing eye glasses and contact lenses, we offer a range of accessories to keep them in excellent condition and optimize their use. These include hard and soft cases, chords, cleaning cloths, and cleaning solutions, all designed to help you maintain your eyewear and maximize their longevity.
             </Text>
@@ -191,12 +202,12 @@ import {
                     // w="full"
                     rounded="lg"
                     shadow="2xl"
-                    src={getCloudinaryImage('IMG_7477-1000x1000_nbrbgt.jpg')} 
+                    src={getCloudinaryImage('IMG_7477-1000x1000_nbrbgt_qrys1q.jpg')} 
                     alt="Hellonext feedback boards software screenshot"
                     width={1000}
-                    height={1000} 
+                    height={697} 
                     placeholder="blur"
-                    blurDataURL={getCloudinaryImageBlur('IMG_7477-1000x1000_nbrbgt.jpg')}
+                    blurDataURL={getCloudinaryImageBlur('IMG_7477-1000x1000_nbrbgt_qrys1q.jpg')}
                   />
           {/* </Stack> */}
           </Box>
@@ -204,11 +215,99 @@ import {
 
         </SimpleGrid>
 
-        <Heading pt={15}>Computerized Eye Examination</Heading>
+        <Heading pt={20}>Computerized Eye Examination</Heading>
             <Text color={'gray.500'} fontSize={'lg'}>
             A new experience in vision
 Experience clear vision with our comprehensive eye exams and personalized eyewear solutions.
 Our state-of-the-art equipment, combined with the expertise of our highly trained eye care professionals ensures accurate diagnoses and effective treatments, and allows us to provide the highest level of care to our patients.            </Text>
+
+<Heading pt={10} pb={5}>Eye Examinations</Heading>
+<UnorderedList>
+  <ListItem>
+    <Text color={'gray.500'} fontSize={'lg'}>
+    Visual Field Analysis
+    </Text>
+  </ListItem>
+
+  <ListItem>
+    <Text color={'gray.500'} fontSize={'lg'}>
+    Low Vision Assesment
+    </Text>
+  </ListItem>
+
+  <ListItem>
+    <Text color={'gray.500'} fontSize={'lg'}>
+    Ishiara Colour Vision Test
+    </Text>
+  </ListItem>
+
+  <ListItem>
+    <Text color={'gray.500'} fontSize={'lg'}>
+    Fundoscopy
+    </Text>
+  </ListItem>
+
+  <ListItem>
+    <Text color={'gray.500'} fontSize={'lg'}>
+    Driver Sight Tests
+    </Text>
+  </ListItem>
+
+  <ListItem>
+    <Text color={'gray.500'} fontSize={'lg'}>
+    Dry Eye Assesment
+    </Text>
+  </ListItem>
+
+  <ListItem>
+    <Text color={'gray.500'} fontSize={'lg'}>
+    Diabetic Retinopathy
+    </Text>
+  </ListItem>
+
+  <ListItem>
+    <Text color={'gray.500'} fontSize={'lg'}>
+    Laser Treatment Refferal and Aftercare
+    </Text>
+  </ListItem>
+
+  <ListItem>
+    <Text color={'gray.500'} fontSize={'lg'}>
+    Contact Lens Assesment and Fitting
+    </Text>
+  </ListItem>
+
+  <ListItem>
+    <Text color={'gray.500'} fontSize={'lg'}>
+    Contact lens post fitting aftercare
+    </Text>
+  </ListItem>
+
+  <ListItem>
+    <Text color={'gray.500'} fontSize={'lg'}>
+    Cycloplegic Refraction
+    </Text>
+  </ListItem>
+
+  <ListItem>
+    <Text color={'gray.500'} fontSize={'lg'}>
+    Medical reports
+    </Text>
+  </ListItem>
+
+  <ListItem>
+    <Text color={'gray.500'} fontSize={'lg'}>
+    Certified Eye Safety Wear
+    </Text>
+  </ListItem>
+
+
+ 
+
+</UnorderedList>
+
+
+
 
             <Heading pt={10}>Lifelong Aftercare</Heading>
             <Text color={'gray.500'} fontSize={'lg'}>

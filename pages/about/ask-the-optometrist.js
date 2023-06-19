@@ -55,7 +55,7 @@ import {
          as={'h1'}
           mb={6}
           fontSize={{
-            base: "6xl",
+            base: "4xl",
             md: "8xl",
           }}
           minHeight={'1vh'}

@@ -305,19 +305,13 @@ import {
       label: 'About',
       children: [
         {
-          label: 'About Us',
-          subLabel: 'Ask The Optometrist',
-          href: '/about/ask-the-optometrist',
-        },
-        {
           label: 'Who We Are',
           subLabel: '',
           href: '/about/who-we-are',
         },
         {
-          label: 'People Trust Us',
-          subLabel: '',
-          href: '/about/people-trust-us',
+          label: 'Ask The Optometrist',
+          href: '/about/ask-the-optometrist',
         },
         {
           label: 'Meet The Team',
@@ -340,9 +334,9 @@ import {
           href: '/products-and-services/service-scope',
         },
         {
-          label: 'Our Value and Equipment',
-          href: '/products-and-services/value-equipment',
-        },
+          label: 'Saftey Wear',
+          href: '/products-and-services/safety-wear',
+        }
       ],
     }, 
     ,{

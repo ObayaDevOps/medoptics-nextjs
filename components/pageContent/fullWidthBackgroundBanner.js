@@ -26,7 +26,9 @@ import {
         h={useBreakpointValue({ base: '800px', md: '80vh' })}
         backgroundImage={
           // 'url(https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1686144658/Slide-5_rzjiaj.png)'
-          'url(https://images.unsplash.com/photo-1600267175161-cfaa711b4a81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)'
+          // 'url(https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1687177643/pexels-anna-shvets-3846023_xipiiv.jpg)'
+          'url(https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1687177749/pexels-pavel-danilyuk-5996704_fhvero.jpg)'
+
         }
         backgroundSize={'cover'}
         backgroundPosition={'center center'}
@@ -65,7 +67,7 @@ import {
                 }}
                 pb={{base:5}}
               >
-                State-Of-The-Art Eye Care Equipment
+                {/* State-Of-The-Art Eye Care Equipment */}
               </chakra.h2>
             </VStack>
 
@@ -73,9 +75,8 @@ import {
               color={'white'}
               fontWeight={700}
               lineHeight={1.2}
-              fontSize={useBreakpointValue({ base: 'lg', md: '2xl' })}>
-                At Med Optics Vision Centre, we are proud to offer our patients the latest in state-of-the-art eye care equipment. Our cutting-edge technology allows us to provide accurate and precise diagnoses, as well as effective treatments for a wide range of eye conditions.
-                Our state-of-the-art equipment, combined with the expertise of our highly trained eye care professionals, allows us to provide the highest level of care to our patients.
+              fontSize={useBreakpointValue({ base: '2xl', md: '2xl' })}>
+                We exist to make sure you and your loved ones have the best vision possible we protected enhanced vision through comprehensive examinations with the expertise of our highly trained optimists and by equipping them with state-of-the-art equipment we want you to look good too so we offer a great range of lens'.
             </Text>
           </Stack>
         </VStack>
@@ -128,7 +129,7 @@ import {
                 }}
                 pb={{base:5}}
               >
-                State-Of-The-Art Eye Care Equipment
+                {/* State-Of-The-Art Eye Care Equipment */}
               </chakra.h2>
             </VStack>
 
@@ -136,9 +137,9 @@ import {
               color={'white'}
               fontWeight={700}
               lineHeight={1.2}
-              fontSize={useBreakpointValue({ base: 'lg', md: '2xl' })}>
-                At Med Optics Vision Centre, we are proud to offer our patients the latest in state-of-the-art eye care equipment. Our cutting-edge technology allows us to provide accurate and precise diagnoses, as well as effective treatments for a wide range of eye conditions.
-                Our state-of-the-art equipment, combined with the expertise of our highly trained eye care professionals, allows us to provide the highest level of care to our patients.
+              fontSize={useBreakpointValue({ base: 'lg', md: '2xl', lg: '4xl' })}>
+                We exist to make sure you and your loved ones have the best vision possible we protected enhanced vision through comprehensive examinations with the expertise of our highly trained optimists and by equipping them with state-of-the-art equipment we want you to look good too so we offer a great range of lens'.
+
             </Text>
           </Stack>
         </VStack>

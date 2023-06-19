@@ -9,6 +9,7 @@ import {
     Icon,
     useColorModeValue,
     UnorderedList,
+    Center,
     ListItem
   } from '@chakra-ui/react';
   import {
@@ -46,7 +47,7 @@ import {
       
       <Container maxW={'6xl'} py={12} minHeight={{md:'110vh'}}>
         <Head>
-          <title>Ask The Optometrist | MedOptics Ltd</title>
+          <title>Who We Are | MedOptics Ltd</title>
           <meta name="description" content="MedOptics Ltd Webpage" />
           {/* <link rel="shortcut icon" href="../public/favicon.ico"></link> */}
           <link rel="shortcut icon" href="../../../images/icon/medoptics-logo-mini-square.jpeg"></link>
@@ -150,6 +151,135 @@ import {
             Upon completing his Masters of Optometry  completing the Professional Qualifying Exams (P.Q.Es) at the University of Bradford in the UK, our founder and Managing Director, Mr. Anguyo Dralega, returned to Uganda in 2001 with a mission to contribute to the advancement of the Optometry field in his home country. He noticed a lack of regulation, standards, and accountability in the fledgling industry. As a result, he founded Med-Optics, driven by the belief that Uganda deserves and can have access to high-quality and precise vision care services.
             Since our inception with a single Optometrist on Buganda Road in Kampala, we have grown significantly to become a team of over 30, stationed across 7 different service centers. Our primary objective of improving the optometry standards in Uganda remains unchanged, and we continue to uphold our core values of Professionalism, Honesty, Quality, and Excellence in all our endeavors.
              </Text>
+
+             <Heading>Standards</Heading>
+            <Text color={'gray.500'} fontSize={'lg'}>
+            Quality and professionalism are at the core of what we do at Med-Optics. Our Optometrists are not only fully qualified but also registered with the Optical Association of Uganda and Allied Health Professionals Council, ensuring that you receive care from the best in the field. We strictly adhere to internationally recognized standards, guaranteeing you the highest level of service and care.            </Text>
+
+            <Heading>Partnerships</Heading>
+            <Text color={'gray.500'} fontSize={'lg'}>
+            At our core, we firmly believe in the age-old adage that "teamwork makes the dream work." That's why we collaborate with a diverse range of partners both locally and internationally, who share our unwavering commitment to improving eye health in Uganda.
+            </Text>
+
+            {/* <Heading>Our Partnerships</Heading> */}
+            <SimpleGrid columns={{ base: 2, md: 3 }} spacing={5}>
+                <Center>
+                <Image
+                    // w="full"
+                    rounded="lg"
+                    shadow="2xl"
+                    src={getCloudinaryImage('marie_stopes_yvwpfp.jpg')} 
+                    alt="Hellonext feedback boards software screenshot"
+                    width={298}
+                    height={169}
+                    placeholder="blur"
+                    blurDataURL={getCloudinaryImageBlur('marie_stopes_yvwpfp.jpg')}
+                />
+                </Center>
+                <Center>
+                <Image
+                    // w="full"
+                    rounded="lg"
+                    shadow="2xl"
+                    src={getCloudinaryImage('GA_ngnhmk.jpg')} 
+                    alt="Hellonext feedback boards software screenshot"
+                    width={394}
+                    height={128}
+                    placeholder="blur"
+                    blurDataURL={getCloudinaryImageBlur('GA_ngnhmk.jpg')}
+                />
+                </Center>
+                <Center>
+                <Image
+                    // w="full"
+                    rounded="lg"
+                    align='center'
+                    shadow="2xl"
+                    src={getCloudinaryImage('LIBERTY_liyt1v.jpg')} 
+                    alt="Hellonext feedback boards software screenshot"
+                    width={225/1.5}
+                    height={225/1.5}
+                    placeholder="blur"
+                    blurDataURL={getCloudinaryImageBlur('LIBERTY_liyt1v.jpg')}
+                />
+                </Center>
+                <Center>
+                <Image
+                    // w="full"
+                    rounded="lg"
+                    shadow="2xl"
+                    src={getCloudinaryImage('AON-MINET_jwjmeq.jpg')} 
+                    alt="Hellonext feedback boards software screenshot"
+                    width={400/1.5}
+                    height={400/1.5}
+                    placeholder="blur"
+                    blurDataURL={getCloudinaryImageBlur('AON-MINET_jwjmeq.jpg')}
+                />
+                </Center>
+                <Center>
+                <Image
+                    // w="full"
+                    rounded="lg"
+                    shadow="2xl"
+                    src={getCloudinaryImage('APA_pra0ek.jpg')} 
+                    alt="Hellonext feedback boards software screenshot"
+                    width={271/1.25}
+                    height={186/1.25} 
+                    placeholder="blur"
+                    blurDataURL={getCloudinaryImageBlur('APA_pra0ek.jpg')}
+                />
+                </Center>
+                <Center>
+                <Image
+                    // w="full"
+                    rounded="lg"
+                    shadow="2xl"
+                    src={getCloudinaryImage('ICEA_cumz8v.jpg')} 
+                    alt="Hellonext feedback boards software screenshot"
+                    width={800/3}
+                    height={566/3}
+                    placeholder="blur"
+                    blurDataURL={getCloudinaryImageBlur('ICEA_cumz8v.jpg')}
+                />
+                </Center>
+                
+                <Center>
+                <Image
+                    // w="full"
+                    rounded="lg"
+                    shadow="2xl"
+                    src={getCloudinaryImage('JUBILEE_fnzxai.jpg')} 
+                    alt="Hellonext feedback boards software screenshot"
+                    width={321}
+                    height={157} 
+                    placeholder="blur"
+                    blurDataURL={getCloudinaryImageBlur('JUBILEE_fnzxai.jpg')}
+                />
+                </Center>
+                <Center>
+                <Image
+                    // w="full"
+                    rounded="lg"
+                    shadow="2xl"
+                    src={getCloudinaryImage('UAP_rdhv3n.jpg')} 
+                    alt="Hellonext feedback boards software screenshot"
+                    width={100}
+                    height={100} 
+                    placeholder="blur"
+                    blurDataURL={getCloudinaryImageBlur('UAP_rdhv3n.jpg')}
+                />  
+                </Center>                                                                                                                          
+
+            </SimpleGrid>
+
+            <Text color={'gray.500'} fontSize={'lg'}>
+            We also offer optical care packages for corporate bodies. Ask us for details.
+            </Text>
+
+            <Heading>Giving Back</Heading>
+            <Text color={'gray.500'} fontSize={'lg'}>
+            We are committed to making eye screening accessible to everyone in the different 	communities through our outreach and CSR program. If your organization, school, or place of 	worship is interested in receiving mobile screening services, please reach out to us. We will be 		more than happy to come to you!            </Text>
+
 
           </Stack>
         </SimpleGrid>

@@ -115,7 +115,7 @@ export default function ThreeFeature(props){
             />
           }
         >
-          {pageContent.threeFeatureText1}
+          {pageContent.threeFeatureText3}
         </Feature>
       </SimpleGrid>
     </Flex>

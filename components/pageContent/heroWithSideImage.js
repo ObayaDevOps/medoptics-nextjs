@@ -201,7 +201,7 @@ export default function HeroWithSideImage(props){
         top={{ lg: 0 }}
         bottom={{ lg: 0 }}
         right={{ lg: 0 }}
-        w={{ lg: "50%" }}
+        w={{ lg: "70%" }}
         border="solid 1px transparent"
       >
         {/* <Image
