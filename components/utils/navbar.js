@@ -29,6 +29,8 @@ import {
 
   import theme from '../utils/theme'
 
+  import { getCloudinaryImage, getCloudinaryImageBlur } from '../../components/utils/cloudinaryImageRetreival';
+
   import NextImage from 'next/image'
   import MedOpticsBoxLogo from '../../public/images/icon/medoptics-logo-mini-square.jpeg'
   import MedOptics20Years from '../../public/images/icon/Med-Optics.svg'
@@ -100,14 +102,20 @@ import {
           <Flex flex={{ base: 3 }} justify={{ base: 'center', md: 'space-evenly' }} p={2}>
           <NextLink href='/#' passHref>
             <Link>
-            {/* <Show above='md'> */}
-              <NextImage src={colorMode === 'light' ? MedOptics20Years:  MedOptics20Years} width={(300)} height={(80)}/>
-            {/* </Show>
-            <Show below='md'>
-              <NextImage src={colorMode === 'light' ? MedOptics20Years:  MedOptics20Years} width={(350)} height={(90)}/>
-            </Show> */}
+              {/* <NextImage src={colorMode === 'light' ? MedOptics20Years:  MedOptics20Years} width={(300)} height={(80)}/> */}
 
-                
+
+              <NextImage
+                    // w="full"
+                    rounded="lg"
+                    shadow="2xl"
+                    src={getCloudinaryImage('Med-Optics_ly2gge.jpg')} 
+                    alt="Hellonext feedback boards software screenshot"
+                    width={300}
+                    height={75}
+                    placeholder="blur"
+                    blurDataURL={getCloudinaryImageBlur('Med-Optics_ly2gge.jpg')}
+                />
             </Link>
           </NextLink>
 
