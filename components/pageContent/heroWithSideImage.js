@@ -130,6 +130,7 @@ export default function HeroWithSideImage(props){
               <NextLink href="/info/service-centres" passHref>
                 <Button
                 as="a"
+                href="/info/service-centres"
                 variant="solid"
                 colorScheme="green"
                 bgGradient='linear(to-r, green.500, green.300)'
@@ -163,6 +164,7 @@ export default function HeroWithSideImage(props){
                 <NextLink href="/appointments/eyeTest" passHref>
                   <Button
                   as="a"
+                  href="/appointments/eyeTest"
                   colorScheme="green"
                   bgGradient='linear(to-r, green.500, green.300)'
                   display="inline-flex"
