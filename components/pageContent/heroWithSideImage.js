@@ -127,7 +127,7 @@ export default function HeroWithSideImage(props){
                 }}
                 paddingTop={5}
             >
-              <NextLink href="/info/service-centres">
+              <NextLink href="/info/service-centres" passHref>
                 <Button
                 as="a"
                 variant="solid"
@@ -160,7 +160,7 @@ export default function HeroWithSideImage(props){
                 </Button>
               </NextLink>
 
-                <NextLink href="/appointments/eyeTest">
+                <NextLink href="/appointments/eyeTest" passHref>
                   <Button
                   as="a"
                   colorScheme="green"
