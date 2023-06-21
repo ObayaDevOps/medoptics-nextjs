@@ -67,8 +67,8 @@ const serviceCentreDetails = [
     email: 'ntinda@medopticsltd.com',
     active: true,
     insuranceCompanies: ['UAP, ', 'APA, ', 'ICEA, ', 'MARIE STOPES'],
-    openingHours:"Monday – Friday: 10:00 – 18:00, Saturday: Closed",
-    photo: "aponye_f6lixf.png",
+    openingHours:"Monday – Friday: 08:00 – 17:00, Saturday: 09:00 – 15:00",
+    photo: "aponye_eih0rd.jpg",
     linkToExhibition: '',
     followLink:
         'https://www.instagram.com/afropocene/',

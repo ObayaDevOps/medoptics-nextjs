@@ -196,7 +196,7 @@ import {
                 Monday—Friday: 8:00AM–5:00PM
               </Text>
               <Text fontSize={'sm'}>      
-                Saturday: 9:00AM–5:00PM
+                Saturday: 9:00AM–3:00PM
               </Text>
             </Stack>
           </SimpleGrid>

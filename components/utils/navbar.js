@@ -108,10 +108,11 @@ import {
               <NextImage
                     // w="full"
                     rounded="lg"
+                    
                     shadow="2xl"
                     src={getCloudinaryImage('Med-Optics_ly2gge.jpg')} 
                     alt="Hellonext feedback boards software screenshot"
-                    width={300}
+                    width={320}
                     height={75}
                     placeholder="blur"
                     blurDataURL={getCloudinaryImageBlur('Med-Optics_ly2gge.jpg')}
