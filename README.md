@@ -97,6 +97,14 @@ ODOO_PASSWORD=XXXX
 
 
 
+## Tidio Chat Bot Integration:
+
+Login here: https://www.tidio.com/panel/dashboard
+Additional details: https://www.tidio.com/blog/add-chat-to-website/
+Ask for login details from medoptics team
+
+
+
 uses npm package as a client: https://github.com/faisalsami/odoo-xmlrpc
 
 ## Analytics + Testing Performance
