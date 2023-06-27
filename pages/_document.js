@@ -19,6 +19,7 @@ export default class Document extends NextDocument {
         <body>
           {/* 👇 Here's the script */}
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+          <script src="//code.tidio.co/zxhbheqqtbhgavio2x1ynt8xbq10qgg7.js" async></script>
           <Main />
           <NextScript />
         </body>
