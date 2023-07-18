@@ -109,7 +109,7 @@ const serviceCentreDetails = [
     email: 'masaka@medopticsltd.com',
     active: true,
     insuranceCompanies: ['UAP, ', 'JUBILEE, ', 'ICEA, ', 'PRUDENTIAL, ', 'LIBERTY, '],
-    openingHours:"Monday – Friday: 08:00 – 17:00, Saturday: 09:00 – 15:00",
+    openingHours:"Monday – Friday: 09:00 – 18:00, Saturday: 09:00 – 15:00",
     photo: "Masaka.png",
     linkToExhibition: '',
     followLink:
@@ -123,7 +123,7 @@ const serviceCentreDetails = [
     email: 'arua@medopticsltd.com',
     active: true,
     insuranceCompanies: ['UAP, ', 'JUBILEE, ', 'ICEA, ','PRUDENTIAL, ', 'GA, ', 'LIBERTY, ', 'MARIE STOPES '],
-    openingHours:"Monday – Friday: 08:00 – 17:00, Saturday: 09:00 – 15:00",
+    openingHours:"Monday – Friday: 09:00 – 18:00, Saturday: 09:00 – 15:00",
     photo: "arua_wqdswp.jpg",
     linkToExhibition: '',
     followLink:
