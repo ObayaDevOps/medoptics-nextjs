@@ -114,6 +114,16 @@ export default defineType({
         validation: (rule) => rule.required(),
       }),
 
+      //Promotions Image
+      defineField({
+        name: 'promotionImage',
+        title: 'Promotion Image',
+        type: 'image',
+        options: {
+          hotspot: true,
+        },
+      }),
+
       //Who we Are Section
       defineField({
         name: 'whoWeAreTitle',

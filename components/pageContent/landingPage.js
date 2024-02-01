@@ -3,6 +3,7 @@ import React from "react";
 
 import HeroWithSideImage from './heroWithSideImage';
 import TwoColumnFeature from './twoColumnFeature';
+import Promotions from './promotion'
 import BasicStatistics from './statisticsBar';
 import GridListWithDescription from './gridListWithDescription';
 import FullWidthBannerWithBackgroundImage from './fullWidthBackgroundBanner';
@@ -14,7 +15,7 @@ import WithSpeechBubbles from './testimonials';
 export default function CallToActionWithAnnotation(props) {
   const landingPageContent  = props.pageContent[0] || [];
 
-  console.log("PRoject ID:");
+  console.log("Project ID:");
   console.log(process.env.NEXT_PUBLIC_SANITY_DATASET);
   console.log(landingPageContent); //confirmed link - here we have all the props
 
@@ -29,6 +30,7 @@ export default function CallToActionWithAnnotation(props) {
 
       <HeroWithSideImage content={landingPageContent}  />
       <ThreeFeature content={landingPageContent} />
+      <Promotions content={landingPageContent} />
       <TwoColumnFeature content={landingPageContent} />
       <BasicStatistics content={landingPageContent} />
       <GridListWithDescription content={landingPageContent} />
