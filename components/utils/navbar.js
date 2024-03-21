@@ -327,6 +327,11 @@ import {
           subLabel: '',
           href: '/about/meet-the-team',
         },
+        {
+          label: 'Quality Policy',
+          subLabel: '',
+          href: '/about/quality-policy',
+        },
       ],
     },
     {
